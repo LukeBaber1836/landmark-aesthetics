@@ -3,22 +3,22 @@
     {
       "name": "facebook",
       "icon": "FaFacebook",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/LandmarkMedSpa"
     },
     {
       "name": "twitter",
       "icon": "FaTwitter",
-      "link": "https://twitter.com/"
-    },
-    {
-      "name": "github",
-      "icon": "FaGithub",
-      "link": "https://www.github.com/"
+      "link": "https://twitter.com/LMA_laserClinic"
     },
     {
       "name": "linkedin",
       "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/"
+      "link": "https://www.linkedin.com/company/landmark-aesthetics-clinic"
+    },
+    {
+      "name": "instagram",
+      "icon": "FaInstagram",
+      "link": "http://www.instagram.com/lma_laserclinic"
     }
   ]
 }

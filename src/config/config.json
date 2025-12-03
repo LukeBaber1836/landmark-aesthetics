@@ -1,50 +1,44 @@
 {
   "site": {
-    "title": "NextSpace - Architecture &amp; Interior Firm NextJS Template",
-    "base_url": "https://nextspace-nextjs.vercel.app",
+    "title": "Landmark Aesthetics",
+    "base_url": "https://landmark-aesthetics.vercel.app/",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.svg",
     "logo_footer": "/images/logo-footer.svg",
     "logo_width": "200",
-    "logo_height": "40",
-    "logo_text": "NextSpace"
+    "logo_height": "65",
+    "logo_text": "Landmark Aesthetics"
   },
-
   "settings": {
     "pagination": 6
   },
-
   "params": {
-    "contact_form_action": "#",
-    "address": "123 Main Street, New York, NY 10001",
+    "contact_form_action": "https://squareup.com/appointments/buyer/widget/51hzr9omifv4pi/FWK61X6ZFH361",
+    "address": "402 E Rusk Street, Jacksonville TX 75766",
     "phone": "123-456-7890",
-    "email": "info@nextspace.com",
-    "footer_title": "Ready To Build Your Dream Project?",
-    "footer_content": "Develops conceptual design ideas, refines them into detailed plans."
+    "email": "questions@landmarkaesthetics.net",
+    "footer_title": "Ready to get started?",
+    "footer_content": "Elevate your natural beauty through personalized treatments and thoughtful care."
   },
-
   "navigation_button": {
     "enable": true,
-    "label": "Get This Template",
-    "link": "https://themefisher.com/products/nextspace-nextjs"
+    "label": "Book Now",
+    "link": "https://squareup.com/appointments/buyer/widget/51hzr9omifv4pi/FWK61X6ZFH361"
   },
-
   "footer_button": {
     "enable": true,
     "label": "Get Started",
     "link": "/contact"
   },
-
   "google_tag_manager": {
     "enable": false,
     "gtm_id": "GTM-XXXXXX"
   },
-
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Landmark Aesthetics",
     "meta_image": "/images/og-image.png",
-    "meta_description": "NextSpace - Architecture &amp; Interior Firm NextJS Template"
+    "meta_description": "Landmark Aesthetics is dedicated to enhancing your natural beauty with expert aesthetic treatments and personalized care."
   }
 }
