@@ -48,7 +48,7 @@ npm run build
 To run the production build locally:
 
 ```bash
-npm run start
+npm start
 ```
 
 ### Linting
