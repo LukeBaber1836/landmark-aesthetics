@@ -39,6 +39,7 @@ const Logo = ({ src }: { src?: string }) => {
           src={logoPath}
           alt={title}
           priority
+          className="h-auto w-auto max-h-[40px] max-w-[130px] lg:max-h-none lg:max-w-none"
           style={{
             height: `${height}px`,
             width: `${width}px`,

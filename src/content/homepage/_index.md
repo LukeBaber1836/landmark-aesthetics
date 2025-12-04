@@ -1,38 +1,32 @@
 ---
 # Banner
 banner:
-  title: "Elevating Spaces Crafting Dreams"
-  content: "We specialize in transforming visions into reality. Explore our work of innovative architectural."
+  title: "Welcome to Landmark Aesthetics"
+  content: "Elevate your natural beauty through personalized treatments and thoughtful care."
   image: "/images/banner.png"
-  spinning_text: "• BEST INTERIOR FIRM SINCE 1992"
+  spinning_text: "• LANDMARK AESTHETICS JACKSONVILLE, TX"
   button:
     enable: true
     label: "Book an appointment"
-    link: "/contact"
+    link: "https://squareup.com/appointments/buyer/widget/51hzr9omifv4pi/FWK61X6ZFH361"
 
 # Gallery
 gallery:
   enable: true
-  title: Architecture Interior.
-  subtitle: ABOUT us
-  description: We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision.
+  title: What is Landmark Aesthetics.
+  subtitle: ABOUT US
+  description: Landmark Aesthetics is a modern medspa dedicated to helping clients look and feel their best. We offer trusted treatments that are delivered with clinical precision and a focus on natural, confident results.
   images:
     - "/images/gallery/1.png"
     - "/images/gallery/2.png"
     - "/images/gallery/3.png"
     - "/images/gallery/4.png"
-    - "/images/gallery/1.png"
-    - "/images/gallery/2.png"
-    - "/images/gallery/3.png"
-    - "/images/gallery/4.png"
-    - "/images/gallery/1.png"
-    - "/images/gallery/2.png"
-    - "/images/gallery/3.png"
-    - "/images/gallery/4.png"
-    - "/images/gallery/1.png"
-    - "/images/gallery/2.png"
-    - "/images/gallery/3.png"
-    - "/images/gallery/4.png"
+    - "/images/gallery/5.png"
+    - "/images/gallery/6.png"
+    - "/images/gallery/7.png"
+    - "/images/gallery/8.png"
+    - "/images/gallery/9.png"
+    - "/images/gallery/10.png"
 
 # Fun Facts
 fun_facts:

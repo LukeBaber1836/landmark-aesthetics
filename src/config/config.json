@@ -17,7 +17,7 @@
   "params": {
     "contact_form_action": "https://squareup.com/appointments/buyer/widget/51hzr9omifv4pi/FWK61X6ZFH361",
     "address": "402 E Rusk Street, Jacksonville TX 75766",
-    "phone": "123-456-7890",
+    "phone": "903-589-8989",
     "email": "questions@landmarkaesthetics.net",
     "footer_title": "Ready to get started?",
     "footer_content": "Elevate your natural beauty through personalized treatments and thoughtful care."
@@ -29,8 +29,8 @@
   },
   "footer_button": {
     "enable": true,
-    "label": "Get Started",
-    "link": "/contact"
+    "label": "Book Now",
+    "link": "https://squareup.com/appointments/buyer/widget/51hzr9omifv4pi/FWK61X6ZFH361"
   },
   "google_tag_manager": {
     "enable": false,

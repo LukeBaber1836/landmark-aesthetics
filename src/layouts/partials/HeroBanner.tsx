@@ -19,14 +19,14 @@ const HeroBanner = ({
               <h1
                 data-aos="fade-up-sm"
                 data-aos-delay="100"
-                className="h2 md:h1 text-white lg:text-[5rem] xl:text-[6rem] font-medium xl:leading-[6.56rem] tracking-tight text-balance"
+                className="h2 md:h1 text-white z-30 lg:text-[5rem] font-medium xl:leading-[6.56rem] tracking-tight text-balance text-shadow-lg text-shadow-black/30"
                 dangerouslySetInnerHTML={markdownify(banner.title)}
               />
               {/* Rotating Text Decoration */}
               <span
                 data-aos="fade-up-sm"
                 data-aos-delay="150"
-                className="absolute top-[0.55em] -right-[0.7em] translate-y-[-25%] translate-x-[5%] w-[200px] h-[200px]"
+                className="absolute lg:-top-[2em] top-[0.55em] -right-[0.7em] translate-y-[-25%] translate-x-[5%] w-[200px] h-[200px] -z-50"
               >
                 <svg
                   className="absolute inset-0 w-full h-full scale-[0.6] lg:scale-[0.8] spin-animation origin-center"
@@ -38,7 +38,7 @@ const HeroBanner = ({
                     cy="110"
                     r="108"
                     stroke="white"
-                    strokeOpacity={0.5}
+                    strokeOpacity={0.7}
                     strokeWidth={1}
                     fill="none"
                   />
@@ -47,7 +47,7 @@ const HeroBanner = ({
                     cy="110"
                     r="70"
                     stroke="white"
-                    strokeOpacity={0.5}
+                    strokeOpacity={0.7}
                     strokeWidth={1}
                     fill="none"
                   />
@@ -67,7 +67,7 @@ const HeroBanner = ({
                         fontWeight: 500,
                         letterSpacing: "2px",
                         fill: "white",
-                        opacity: 0.6,
+                        opacity: 0.8,
                       }}
                     >
                       {banner.spinning_text}
@@ -77,11 +77,11 @@ const HeroBanner = ({
               </span>
               {/* /Rotating Text Decoration */}
             </div>
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mt-10">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-10 mt-10">
               <p
                 data-aos="fade-up-sm"
                 data-aos-delay="300"
-                className="text-xl text-white/85 flex-1 text-balance leading-[34px]"
+                className="text-xl text-white/85 flex-1 text-balance leading-[34px] text-shadow-lg text-shadow-black/30"
                 dangerouslySetInnerHTML={markdownify(banner.content)}
               />
               <div data-aos="fade-up-sm" data-aos-delay="450">

@@ -25,13 +25,13 @@ export default function Home() {
       <SeoMeta />
       <HeroBanner banner={banner} />
       <GallerySlider gallery={gallery} />
-      <FunFacts funFacts={fun_facts} isNoSectionTop />
-      <Testimonial isNoSectionTop testimonial={testimonial} />
       <HomeServicesSection services={services} />
-      <HomeServicesFactsSection services_facts={services_facts} />
-      <HomeProjectsSection projects={projects} />
-      <CallToAction isNoSectionTop />
+      {/* <FunFacts funFacts={fun_facts} isNoSectionTop /> */}
+      <Testimonial isNoSectionTop testimonial={testimonial} />
+      {/* <HomeServicesFactsSection services_facts={services_facts} /> */}
+      {/* <HomeProjectsSection projects={projects} /> */}
       <FAQs isNoSectionTop faqsData={faqsData} />
+      <CallToAction isNoSectionTop />
     </>
   );
 }

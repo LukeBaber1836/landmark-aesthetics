@@ -6,10 +6,10 @@ description: "We encourage our team to fearlessly challenge conventions and pion
 image: "/images/contact.png"
 
 testimonials:
-  - name: "William Elijah Jr."
-    designation: "Managing Director"
+  - name: "Callie Wyatt"
+    designation: "Customer"
     avatar: "/images/reviews/1.png"
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
+    content: "This medspa is my absolute fav! I have been to a few in different cities and the ladies here make you feel so comfortable and fully involved in whatever treatments you do to make sure you are happy. Love love this place"
     featured: true
 
   - name: "Lucas Benjamin"
