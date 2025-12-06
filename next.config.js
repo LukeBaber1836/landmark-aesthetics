@@ -1,5 +1,5 @@
 
-import config from "./src/config/config.json";
+const config = require("./src/config/config.json");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
