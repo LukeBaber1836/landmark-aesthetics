@@ -1,6 +1,6 @@
 ---
 title: Frequently Asked Questions
-description: Answers to Common Questions About Our Mission and Work and Quick Guide to Our Programs and Processes
+description: Answers to common questions about our services procedures.
 button:
   enable: true
   label: "Contact Us"
@@ -11,16 +11,14 @@ badge:
   icon: "FaArtstation" ## Icons from https://react-icons.github.io/react-icons/icons/fa6/
   bg_color: "bg-secondary"
 list:
-  - question: "How secure is my financial data on your platform?"
-    answer: "We take the security and privacy of your financial data very seriously. Our platform employs industry-standard encryption protocols to safeguard your information during transmission and storage."
-  - question: "Do you offer phone support?"
-    answer: "Yes, we offer phone support for all customers. Contact us during business hours for assistance."
-  - question: "Can I use my own domain?"
-    answer: "Yes, you can use your own domain with all plans. Go to your account settings to set up your custom domain."
-  - question: "Do you offer a discount for annual plans?"
-    answer: "Yes, we offer a 20% discount on all annual plans. Contact us for more information."
-  - question: "Can I change my password?"
-    answer: "Yes, you can change your password at any time. Go to your account settings to update your password."
-  - question: "Do you offer a free plan?"
-    answer: "Yes, we offer a free plan with limited features. Upgrade to a paid plan for full access to all features."
+  - question: "How do I schedule an appointment?"
+    answer: "You can schedule an appointment by using the online booking form on this our website or by calling our office at 903-589-8989."
+  - question: "How can I reschedule or cancel my appointment?"
+    answer: "You can reschedule or cancel your appointment by contacting us at least 24 hours in advance. Please call 903-589-8989 to make any changes."
+  - question: "Do you requrie a consultation before treatment?"
+    answer: "Yes, we recommend scheduling a consultation prior to any treatment to discuss your goals and create a personalized plan."
+  - question: "Are there any discounts available?"
+    answer: "We offer seasonal promotions and package deals. Please ask about our specials during your visit or check our website for current offers."
+  - question: "Do you require a deposit for appointments?"
+    answer: "Yes, a deposit may be required for certain treatments to secure your appointment. The deposit amount will be applied toward the total cost of the treatment."
 ---

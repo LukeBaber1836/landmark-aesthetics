@@ -46,11 +46,11 @@ const FAQs = ({
                   data-aos-delay="200"
                   className="mt-3 font-medium text-primary pb-14"
                   dangerouslySetInnerHTML={markdownify(
-                    "Still Have A Question?",
+                    "Still Have A Question?"
                   )}
                 />
                 <div data-aos="fade-up-sm" data-aos-delay="300">
-                  <Button enable label="See All FAQs" link="/faqs" />
+                  <Button enable label="Contact Us" link="/contact" />
                 </div>
               </div>
               <div className="max-lg:pt-10 lg:w-[70%] mx-auto">
