@@ -58,13 +58,13 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="row section">
+        <div className="row section xl:w-[1450px] lg:w-[1300px] mx-auto">
           <div className="md:col-10">
-            <div className="row g-5 max-md:justify-center">
+            <div className="row g-5 md:justify-between justify-center">
               <div
-                data-aos="fade-up-sm"
+                data-aos="fade-up-sam"
                 data-aos-delay="300"
-                className="col-10 md:col-6"
+                className="col-10 md:col-6 max-w-[400px]"
               >
                 <ImageFallback
                   src={config.site.logo_footer}
@@ -95,7 +95,7 @@ export default function Footer() {
                     <Link
                       target="_blank"
                       href={`https://www.google.com/maps?q=${encodeURIComponent(
-                        address,
+                        address
                       )}`}
                       dangerouslySetInnerHTML={markdownify(address)}
                     />
