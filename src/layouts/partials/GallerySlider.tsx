@@ -88,7 +88,7 @@ const GallerySlider = ({
                     width={392}
                     src={img}
                     alt={`gallery-slider-${i}`}
-                    className="gallery-image"
+                    className="gallery-image shadow-lg shadow-black/20 rounded-2xl"
                   />
                 </div>
               ))}

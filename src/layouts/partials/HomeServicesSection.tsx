@@ -10,7 +10,7 @@ const HomeServicesSection = ({
   services: Homepage["frontmatter"]["services"];
 }) => {
   const featuredHomeServices = getSinglePage<ServicePage["frontmatter"]>(
-    "services",
+    "services"
   ).filter((s) => s.frontmatter.featured_in_homepage);
 
   return (
@@ -49,7 +49,7 @@ const HomeServicesSection = ({
               <div
                 data-aos="fade-up-sm"
                 data-aos-delay={index * 100 + 300}
-                className="flex flex-col md:h-[550px] justify-end mb-14 last:mb-0"
+                className="flex flex-col md:h-[550px] justify-end mb-14 last:mb-0 px-5"
                 key={service.slug}
               >
                 <div className="flex justify-center items-end md:h-[400px]">
@@ -60,8 +60,8 @@ const HomeServicesSection = ({
                     height={500}
                     className={`${
                       index % 3 === 1
-                        ? "h-[500px] object-cover w-full"
-                        : "h-[410px] object-cover w-full self-end"
+                        ? "h-[500px] object-cover w-full rounded-tr-3xl rounded-bl-3xl shadow-xl shadow-black/20"
+                        : "h-[410px] object-cover w-full self-end rounded-tl-3xl rounded-br-3xl shadow-xl shadow-black/10"
                     }`}
                   />
                 </div>
@@ -70,12 +70,12 @@ const HomeServicesSection = ({
                   <h3
                     className="h5 font-medium mb-2"
                     dangerouslySetInnerHTML={markdownify(
-                      service.frontmatter.title,
+                      service.frontmatter.title
                     )}
                   />
                   <p
                     dangerouslySetInnerHTML={markdownify(
-                      service.frontmatter.description || "",
+                      service.frontmatter.description || ""
                     )}
                   />
                 </div>

@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Welcome to Landmark Aesthetics"
-  content: "Elevate your natural beauty through personalized treatments and thoughtful care."
+  content: "Elevating your natural beauty through personalized treatments and thoughtful care."
   image: "/images/banner.png"
   spinning_text: "• LANDMARK AESTHETICS JACKSONVILLE, TX"
   button:

@@ -1,13 +1,12 @@
 ---
 enable: true
-title: "Unlock Your Dream Home Today!"
+title: "Turn back the clock today!"
 image: "/images/call-to-action.png"
-description: " We encourage clients to actively participate in discussions,
-  share their ideas, preferences, and feedback."
+description: "Our expert team is ready to help you achieve your aesthetic goals with personalized treatments and care."
 button_solid:
   enable: true
-  label: "Get in touch"
-  link: "/contact"
+  label: "Book Now"
+  link: "https://squareup.com/appointments/buyer/widget/51hzr9omifv4pi/FWK61X6ZFH361"
 
 button_outline:
   enable: true

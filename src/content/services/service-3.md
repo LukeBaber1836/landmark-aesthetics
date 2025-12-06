@@ -1,7 +1,7 @@
 ---
 title: "Body Contouring"
 meta_title: ""
-description: "Body contouring encompasses a variety of cosmetic procedures aimed at reshaping and improving the appearance of the body by removing excess fat and tightening skin, resulting in a more toned and sculpted look."
+description: "Body contouring encompasses a variety of cosmetic procedures aimed at reshaping and improving the appearance of the body by removing excess fat and tightening skin."
 date: 2025-05-06T05:00:00Z
 image: "/images/services/service-3.png"
 categories: ["body-contouring"]

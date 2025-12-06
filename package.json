@@ -1,8 +1,8 @@
 {
-  "name": "nextspace-nextjs",
+  "name": "landmark-aesthetics",
   "version": "1.0.1",
-  "description": "NextSpace - Architecture; Interior Firm NextJS Template",
-  "author": "Themefisher",
+  "description": "Landmark Aesthetics - Elevating your natural beauty through personalized treatments and thoughtful care.",
+  "author": "Luke Baber",
   "license": "UNLICENSED",
   "packageManager": "yarn@1.22.22",
   "private": true,
