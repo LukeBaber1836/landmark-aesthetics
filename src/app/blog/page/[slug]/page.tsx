@@ -31,7 +31,7 @@ const BlogPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const faqsData = getListPage<Faqs["frontmatter"]>("faqs/_index.md");
   const postIndex = getListPage<BlogPost["frontmatter"]>(
-    `${BLOG_FOLDER}/_index.md`
+    `${BLOG_FOLDER}/_index.md`,
   );
   const posts = getSinglePage<BlogPost["frontmatter"]>(BLOG_FOLDER);
   const sortedPosts = sortByDate(posts);

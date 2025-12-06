@@ -42,7 +42,7 @@ const ProjectCard = ({
         <div className="flex gap-2 items-center justify-between w-full">
           <p
             dangerouslySetInnerHTML={markdownify(
-              project.frontmatter.project_type || ""
+              project.frontmatter.project_type || "",
             )}
           />
 

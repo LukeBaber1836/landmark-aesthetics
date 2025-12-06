@@ -142,7 +142,7 @@ export default function AboutPage() {
                   data-aos-delay="150"
                   className="font-medium text-primary uppercase"
                   dangerouslySetInnerHTML={markdownify(
-                    blog_section.subtitle || ""
+                    blog_section.subtitle || "",
                   )}
                 />
                 <h2
@@ -150,7 +150,7 @@ export default function AboutPage() {
                   data-aos-delay="200"
                   className="mt-3 font-medium text-primary"
                   dangerouslySetInnerHTML={markdownify(
-                    blog_section.title || ""
+                    blog_section.title || "",
                   )}
                 />
               </div>
@@ -159,7 +159,7 @@ export default function AboutPage() {
                 data-aos-delay="300"
                 className="lg:col-8 h4 text-primary md:indent-20 text-center lg:text-left"
                 dangerouslySetInnerHTML={markdownify(
-                  blog_section.description || ""
+                  blog_section.description || "",
                 )}
               />
             </div>
@@ -190,7 +190,7 @@ export default function AboutPage() {
                   data-aos-delay="150"
                   className="font-medium text-primary uppercase"
                   dangerouslySetInnerHTML={markdownify(
-                    team_section.subtitle || ""
+                    team_section.subtitle || "",
                   )}
                 />
                 <h2
@@ -198,7 +198,7 @@ export default function AboutPage() {
                   data-aos-delay="200"
                   className="mt-3 font-medium text-primary"
                   dangerouslySetInnerHTML={markdownify(
-                    team_section.title || ""
+                    team_section.title || "",
                   )}
                 />
               </div>

@@ -8,43 +8,31 @@ image: "/images/contact.png"
 testimonials:
   - name: "Callie Wyatt"
     designation: "Customer"
-    avatar: "/images/reviews/1.png"
+    avatar: ""
     content: "This medspa is my absolute fav! I have been to a few in different cities and the ladies here make you feel so comfortable and fully involved in whatever treatments you do to make sure you are happy. Love love this place"
     featured: true
 
-  - name: "Lucas Benjamin"
-    designation: "Managing Director"
-    avatar: "/images/reviews/1.png"
-    content: "Thanks to Nextspace, my home has been transformed into a sanctuary that reflects my personality and lifestyle."
+  - name: "Michelle Leigh"
+    designation: "Customer"
+    avatar: ""
+    content: "Just had a massage with Deb and she is amazing! I would definitely recommend her to anyone looking for a massage. This has pretty much convinced me to go from maybe getting quarterly massages to getting at least one a month. I can't wait to go back!"
     featured: true
 
-  - name: "Marvin McKinney"
-    designation: "Happy Homeowner"
-    avatar: "/images/reviews/1.png"
-    content: "I had the pleasure of working with Nextspace on a complete renovation of my home, and I couldn't be happier with the results."
+  - name: "Amy S."
+    designation: "Customer"
+    avatar: ""
+    content: "Totally blown away by my experience here! Dr. Baber and his NP were extremely thorough, kind and gave me a laser treatment worth driving from Dallas for. Have had the same procedure in there for more money and a much less thorough treatment. I’ll definitely be back!!"
     featured: true
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Nancy Boone RN"
+    designation: "Customer"
     avatar: ""
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
+    content: "Just had my first appointment at The Landmark. I was very impressed with their friendliness and expertise. This will be first of many appointmets, I'm sure."
     featured: false
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "L. B."
+    designation: "Customer"
     avatar: ""
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
-    featured: false
-
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: ""
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
-    featured: false
-
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
-    avatar: ""
-    content: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
+    content: "Staff are very friendly and informative. My treatment was reasonably priced and I'm satisfied with the results. Highly recommend."
     featured: false
 ---

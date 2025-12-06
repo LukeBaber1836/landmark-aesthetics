@@ -15,7 +15,7 @@ const BlogIndexPage = () => {
   const faqsData = getListPage<Faqs["frontmatter"]>("faqs/_index.md");
   const posts = getSinglePage<BlogPost["frontmatter"]>(BLOG_FOLDER);
   const postIndex = getListPage<BlogPost["frontmatter"]>(
-    `${BLOG_FOLDER}/_index.md`
+    `${BLOG_FOLDER}/_index.md`,
   );
   const sortedPosts = sortByDate(posts);
   const totalPages = Math.ceil(posts.length / config.settings.pagination);

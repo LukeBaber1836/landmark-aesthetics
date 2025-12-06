@@ -91,7 +91,7 @@ export default function Pagination({
             >
               {pagination}
             </Link>
-          )
+          ),
         )}
 
         {hasNextPage ? (

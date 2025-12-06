@@ -29,13 +29,13 @@ const Accordion = ({
     // Use a type assertion to handle the custom event
     window.addEventListener(
       "accordion:toggle" as any,
-      handler as EventListener
+      handler as EventListener,
     );
 
     return () => {
       window.removeEventListener(
         "accordion:toggle" as any,
-        handler as EventListener
+        handler as EventListener,
       );
     };
   }, [id]);

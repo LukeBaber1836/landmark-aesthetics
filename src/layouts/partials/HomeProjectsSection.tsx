@@ -11,7 +11,7 @@ export default function HomeProjectsSection({
 }) {
   const allProjects = getSinglePage("projects") as Project[];
   const projectsSingle = allProjects.filter(
-    (f) => f.frontmatter.featured_in_homepage
+    (f) => f.frontmatter.featured_in_homepage,
   );
 
   const { enable, title, subtitle, button } = projects;

@@ -32,7 +32,7 @@ const { navigation_button } = config;
 export default function Header() {
   const pathname = usePathname();
   const [activeDropdown, setActiveDropdown] = React.useState<string | null>(
-    null
+    null,
   );
 
   const toggleDropdown = (menuName: string) => {
@@ -41,7 +41,7 @@ export default function Header() {
 
   return (
     <header className={`header fixed top-0 z-50 w-full`}>
-      <nav className="navbar container relative z-10">
+      <nav className="navbar container relative z-10 shadow-lg shadow-black/10">
         {/* logo */}
         <div className="order-0 lg:order-2">
           <Logo />
@@ -90,8 +90,8 @@ export default function Header() {
                           subchild.children?.some(
                             (child) =>
                               pathname === child.url ||
-                              pathname === `${child.url}/`
-                          )
+                              pathname === `${child.url}/`,
+                          ),
                         )
                         .includes(true)
                         ? "active"
@@ -107,7 +107,7 @@ export default function Header() {
                     </span>
                   </span>
                   <div
-                    className={`mega-menu-wrapper max-lg:hidden max-lg:group-[.active]:flex max-lg:group-[.active]:flex-col lg:invisible lg:absolute lg:left-0 lg:flex ${menu.hasMegamenu ? "lg:items-center" : "lg:flex-col"} lg:opacity-0 lg:transition-all lg:duration-300 lg:group-hover:visible lg:group-hover:opacity-100 ${!menu.hasMegamenu ? " lg:p-4 lg:rounded-xl lg:border lg:border-border" : ""}`}
+                    className={`mega-menu-wrapper max-lg:hidden max-lg:group-[.active]:flex max-lg:group-[.active]:flex-col lg:invisible lg:absolute lg:left-0 lg:flex ${menu.hasMegamenu ? "lg:items-center" : "lg:flex-col"} lg:opacity-0 lg:transition-all lg:duration-300 lg:group-hover:visible lg:group-hover:opacity-100 ${!menu.hasMegamenu ? " lg:p-4 lg:rounded-xl lg:border lg:border-border-2" : ""}`}
                   >
                     {menu.image && menu.hasMegamenu && (
                       <div className="flex-shrink-0 mr-4">

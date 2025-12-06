@@ -43,7 +43,7 @@ const FunFacts = ({
                   <p
                     className="text-balance"
                     dangerouslySetInnerHTML={markdownify(
-                      metric.description || ""
+                      metric.description || "",
                     )}
                   />
                 </div>

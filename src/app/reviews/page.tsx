@@ -11,7 +11,7 @@ const ReviewsPage = () => {
   const reviewsIndex =
     getListPage<ReviewPage["frontmatter"]>("reviews/_index.md");
   const featuredTestimonials = reviewsIndex.frontmatter.testimonials?.filter(
-    (f) => f.featured
+    (f) => f.featured,
   );
 
   return (
@@ -63,7 +63,7 @@ const ReviewsPage = () => {
                   />
                   <p
                     dangerouslySetInnerHTML={markdownify(
-                      testimonial.designation
+                      testimonial.designation,
                     )}
                   />
                 </div>

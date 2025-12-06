@@ -118,7 +118,7 @@ const ContactPage = () => {
                 data-aos-delay="200"
                 className="text-balance"
                 dangerouslySetInnerHTML={markdownify(
-                  address_section.description
+                  address_section.description,
                 )}
               />
 
@@ -140,7 +140,7 @@ const ContactPage = () => {
                   <Link
                     target="_blank"
                     href={`https://www.google.com/maps?q=${encodeURIComponent(
-                      config.params.address
+                      config.params.address,
                     )}`}
                     dangerouslySetInnerHTML={markdownify(config.params.address)}
                   />

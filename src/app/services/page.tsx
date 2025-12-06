@@ -46,7 +46,7 @@ const ServicesPage = () => {
                   data-aos-delay="150"
                   className="h4 pb-24"
                   dangerouslySetInnerHTML={markdownify(
-                    service.frontmatter.title
+                    service.frontmatter.title,
                   )}
                 />
 
@@ -67,7 +67,7 @@ const ServicesPage = () => {
                     <p
                       className="text-balance"
                       dangerouslySetInnerHTML={markdownify(
-                        feature.description || ""
+                        feature.description || "",
                       )}
                     />
                   </div>

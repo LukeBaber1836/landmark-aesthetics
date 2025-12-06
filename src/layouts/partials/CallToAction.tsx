@@ -11,7 +11,7 @@ const CallToAction = ({
   isNoSectionBottom?: boolean;
 }) => {
   const callToActionData = getListPage<CTASection>(
-    "sections/call-to-action.md"
+    "sections/call-to-action.md",
   );
 
   return (
@@ -30,7 +30,7 @@ const CallToAction = ({
                   data-aos-delay="150"
                   className="h1 text-white flex-1"
                   dangerouslySetInnerHTML={markdownify(
-                    callToActionData.frontmatter.title
+                    callToActionData.frontmatter.title,
                   )}
                 />
                 <div className="flex-1">
@@ -39,7 +39,7 @@ const CallToAction = ({
                     data-aos-delay="250"
                     className="mt-4 text-white/80 text-balance text-lg"
                     dangerouslySetInnerHTML={markdownify(
-                      callToActionData.frontmatter.description
+                      callToActionData.frontmatter.description,
                     )}
                   />
                   <div className="flex flex-wrap gap-5 pt-8 max-lg:justify-center">

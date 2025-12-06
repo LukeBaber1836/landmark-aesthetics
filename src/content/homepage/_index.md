@@ -69,7 +69,7 @@ fun_facts:
 # Services Section
 services:
   enable: true
-  title: "Get your dream home with expert help."
+  title: "We offer a wide range of regenerative beauty treatmens"
   subtitle: "SERVICES"
   button:
     enable: true

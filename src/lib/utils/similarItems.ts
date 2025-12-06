@@ -10,8 +10,8 @@ const similarItems = (currentItem: any, allItems: any[]) => {
   // filter by categories
   const filterByCategories = allItems.filter((item: any) =>
     categories.find((category) =>
-      item.frontmatter.categories.includes(category)
-    )
+      item.frontmatter.categories.includes(category),
+    ),
   );
 
   // merged after filter
@@ -19,7 +19,7 @@ const similarItems = (currentItem: any, allItems: any[]) => {
 
   // filter by slug
   const filterBySlug = mergedItems.filter(
-    (product) => product.slug !== currentItem.slug
+    (product) => product.slug !== currentItem.slug,
   );
 
   return filterBySlug;

@@ -1,4 +1,3 @@
-
 import shortcodes from "@/shortcodes/all";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";

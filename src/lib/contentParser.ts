@@ -35,7 +35,7 @@ export const getListPage = <T>(filePath: string) => {
 
 // get all single pages, ex: blog/post.md
 export const getSinglePage = <T extends Record<string, any>>(
-  folder: string
+  folder: string,
 ) => {
   const folderPath = path.join(contentPath, folder);
 
@@ -46,7 +46,7 @@ export const getSinglePage = <T extends Record<string, any>>(
   const filesPath = fs.readdirSync(folderPath);
   const sanitizeFiles = filesPath.filter((file) => file.endsWith(".md"));
   const filterSingleFiles = sanitizeFiles.filter((file) =>
-    file.match(/^(?!_)/)
+    file.match(/^(?!_)/),
   );
 
   const singlePages = filterSingleFiles.map((filename) => {
@@ -64,10 +64,10 @@ export const getSinglePage = <T extends Record<string, any>>(
   });
 
   const publishedPages = singlePages.filter(
-    (page) => !page.frontmatter.draft && page
+    (page) => !page.frontmatter.draft && page,
   );
   const filterByDate = publishedPages.filter(
-    (page) => new Date(page.frontmatter.date || new Date()) <= new Date()
+    (page) => new Date(page.frontmatter.date || new Date()) <= new Date(),
   );
 
   return filterByDate;

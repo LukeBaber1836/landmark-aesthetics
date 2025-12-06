@@ -95,7 +95,7 @@ export default function Footer() {
                     <Link
                       target="_blank"
                       href={`https://www.google.com/maps?q=${encodeURIComponent(
-                        address
+                        address,
                       )}`}
                       dangerouslySetInnerHTML={markdownify(address)}
                     />

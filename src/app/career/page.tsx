@@ -101,7 +101,7 @@ export default async function CareerPage() {
                 data-aos-delay="200"
                 className="text-lg max-lg:text-center text-balance"
                 dangerouslySetInnerHTML={markdownify(
-                  available_jobs.description
+                  available_jobs.description,
                 )}
               />
 

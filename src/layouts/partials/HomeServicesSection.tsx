@@ -10,7 +10,7 @@ const HomeServicesSection = ({
   services: Homepage["frontmatter"]["services"];
 }) => {
   const featuredHomeServices = getSinglePage<ServicePage["frontmatter"]>(
-    "services"
+    "services",
   ).filter((s) => s.frontmatter.featured_in_homepage);
 
   return (
@@ -70,12 +70,12 @@ const HomeServicesSection = ({
                   <h3
                     className="h5 font-medium mb-2"
                     dangerouslySetInnerHTML={markdownify(
-                      service.frontmatter.title
+                      service.frontmatter.title,
                     )}
                   />
                   <p
                     dangerouslySetInnerHTML={markdownify(
-                      service.frontmatter.description || ""
+                      service.frontmatter.description || "",
                     )}
                   />
                 </div>

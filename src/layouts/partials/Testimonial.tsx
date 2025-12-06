@@ -73,7 +73,7 @@ const Testimonial = ({
                           <div className="flex items-center">
                             <p
                               dangerouslySetInnerHTML={markdownify(
-                                item.content
+                                item.content,
                               )}
                               className="text-white md:text-h5 lg:text-h4 before:content-['“'] after:content-['”']"
                             />
@@ -86,7 +86,7 @@ const Testimonial = ({
                           <p
                             className="text-white/50"
                             dangerouslySetInnerHTML={markdownify(
-                              item.designation
+                              item.designation,
                             )}
                           />
                         </div>
