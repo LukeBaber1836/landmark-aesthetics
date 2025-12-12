@@ -95,7 +95,7 @@ const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
                 data-aos="fade-up-sm"
                 data-aos-delay="200"
                 className="my-3 font-medium text-primary"
-                dangerouslySetInnerHTML={markdownify("Related Services")}
+                dangerouslySetInnerHTML={markdownify("Other Services")}
               />
               <div data-aos="fade-up-sm" data-aos-delay="300">
                 <Button enable label="View All" link="/services" />
