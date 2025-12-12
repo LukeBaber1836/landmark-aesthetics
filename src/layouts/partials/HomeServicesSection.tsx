@@ -66,9 +66,9 @@ const HomeServicesSection = ({
                   />
                 </div>
 
-                <div className="mt-10 text-center">
+                <div className="mt-10 text-left">
                   <h3
-                    className="h5 font-medium mb-2"
+                    className="h5 font-medium mb-2 text-center"
                     dangerouslySetInnerHTML={markdownify(
                       service.frontmatter.title
                     )}
