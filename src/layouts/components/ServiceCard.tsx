@@ -1,17 +1,17 @@
 import ImageFallback from "@/helpers/ImageFallback";
 import dateFormat from "@/lib/utils/dateFormat";
 import { markdownify } from "@/lib/utils/textConverter";
-import type { BlogPost } from "@/types";
+import type { ServicePost } from "@/types";
 import Link from "next/link";
 
 interface Props {
-  post: BlogPost;
+  service: ServicePost;
   index: number;
   className?: string;
 }
 
-export default function BlogCard({ post, index, className }: Props) {
-  const { title, image, date, description } = post.frontmatter;
+export default function ServiceCard({ service, index, className }: Props) {
+  const { title, image, date, description } = service.frontmatter;
   return (
     <div
       data-aos="fade-up-sm"
@@ -27,21 +27,18 @@ export default function BlogCard({ post, index, className }: Props) {
           className="object-cover aspect-[9/12] w-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
         />
       </div>
-      <p className="px-3 py-1 bg-primary/10 text-primary font-medium rounded-full text-sm w-fit mt-8 mb-7">
-        {dateFormat(date!)}
-      </p>
 
       <Link
         className="before:absolute before:inset-0"
-        href={`/blog/${post.slug}`}
+        href={`/services/${service.slug}`}
       >
         <h2
-          className="h5 mb-6"
+          className="h5 my-6"
           dangerouslySetInnerHTML={markdownify(title || "")}
         />
       </Link>
       <p
-        className="text-base text-body-color mb-7 line-clamp-2"
+        className="text-base text-body-color mb-7 line-clamp-3"
         dangerouslySetInnerHTML={markdownify(description || "")}
       />
     </div>

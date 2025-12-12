@@ -2,16 +2,16 @@ import Button from "@/components/Button";
 import ImageFallback from "@/helpers/ImageFallback";
 import { getSinglePage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
-import type { Homepage, ServicePage } from "@/types";
+import type { Homepage, ServicePost } from "@/types";
 
 const HomeServicesSection = ({
   services,
 }: {
   services: Homepage["frontmatter"]["services"];
 }) => {
-  const featuredHomeServices = getSinglePage<ServicePage["frontmatter"]>(
+  const featuredHomeServices = getSinglePage<ServicePost["frontmatter"]>(
     "services"
-  ).filter((s) => s.frontmatter.featured_in_homepage);
+  ).filter((s) => s.frontmatter.featured);
 
   return (
     services.enable && (

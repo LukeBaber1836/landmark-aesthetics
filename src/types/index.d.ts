@@ -21,7 +21,7 @@ export interface FunFactMetric extends Metric {
   counter: Counter;
 }
 
-export interface BlogPost extends Page {
+export interface ServicePost extends Page {
   frontmatter: Page["frontmatter"] & {
     categories: string[];
     featured?: boolean;
@@ -50,12 +50,12 @@ export interface TeamMember {
   avatar?: string;
 }
 
-export interface BlogSection {
+export interface ServiceSection {
   enable: boolean;
   title?: string;
   subtitle: string;
   description?: string;
-  show_blog_count: number;
+  show_service_count: number;
 }
 
 export interface TeamSection {
@@ -68,7 +68,7 @@ export interface TeamSection {
 export interface AboutPage extends Page {
   frontmatter: Page["frontmatter"] & {
     images_gallery: string[];
-    blog_section: BlogSection;
+    service_section: ServiceSection;
     team_section: TeamSection;
   };
 }
@@ -208,8 +208,8 @@ export interface Badge {
   bg_color: string;
 }
 
-export interface Project extends BlogPost {
-  frontmatter: BlogPost["frontmatter"] & {
+export interface Project extends ServicePost {
+  frontmatter: ServicePost["frontmatter"] & {
     client_name?: string;
     project_type?: string;
     featured_in_homepage?: boolean;

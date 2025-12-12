@@ -8,18 +8,47 @@ import FAQs from "@/partials/FAQs";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import { ServicePost, Faqs } from "@/types";
+import { notFound } from "next/navigation";
 
 const SERVICES_FOLDER = "services";
 
-const ServicesIndexPage = () => {
-  const faqsData = getListPage<Faqs["frontmatter"]>("faqs/_index.md");
+export async function generateStaticParams() {
   const services = getSinglePage<ServicePost["frontmatter"]>(SERVICES_FOLDER);
+  const totalPages = Math.ceil(services.length / config.settings.pagination);
+  const paths = [];
+
+  for (let i = 1; i < totalPages; i++) {
+    paths.push({
+      params: {
+        slug: (i + 1).toString(),
+      },
+    });
+  }
+  return paths;
+}
+
+const ServicesPage = async ({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) => {
+  const { slug } = await params;
+  const faqsData = getListPage<Faqs["frontmatter"]>("faqs/_index.md");
   const servicesIndex = getListPage<ServicePost["frontmatter"]>(
     `${SERVICES_FOLDER}/_index.md`
   );
+  const services = getSinglePage<ServicePost["frontmatter"]>(SERVICES_FOLDER);
   const sortedServices = sortByDate(services);
   const totalPages = Math.ceil(services.length / config.settings.pagination);
-  const currentServices = sortedServices.slice(0, config.settings.pagination);
+  const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
+  const indexOfLastService = currentPage * config.settings.pagination;
+  const indexOfFirstService = indexOfLastService - config.settings.pagination;
+  const currentServices = sortedServices.slice(
+    indexOfFirstService,
+    indexOfLastService
+  );
+
+  if (!servicesIndex) return notFound();
 
   return (
     <>
@@ -33,7 +62,7 @@ const ServicesIndexPage = () => {
             ))}
             <Pagination
               section={SERVICES_FOLDER}
-              currentPage={1}
+              currentPage={currentPage}
               totalPages={totalPages}
             />
           </div>
@@ -46,4 +75,4 @@ const ServicesIndexPage = () => {
   );
 };
 
-export default ServicesIndexPage;
+export default ServicesPage;

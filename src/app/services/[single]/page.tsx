@@ -1,4 +1,4 @@
-import BlogCard from "@/components/BlogCard";
+import ServiceCard from "@/components/ServiceCard";
 import Button from "@/components/Button";
 import ImageFallback from "@/helpers/ImageFallback";
 import MDXContent from "@/helpers/MDXContent";
@@ -6,37 +6,39 @@ import { getSinglePage } from "@/lib/contentParser";
 import similarItems from "@/lib/utils/similarItems";
 import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
-import type { BlogPost } from "@/types";
+import type { ServicePost } from "@/types";
 import { format } from "date-fns";
 import { notFound } from "next/navigation";
 
-const blog_folder = "blog";
+const services_folder = "services";
 
 // remove dynamicParams
 export const dynamicParams = false;
 
 // generate static params
 export const generateStaticParams: () => { single: string }[] = () => {
-  const posts = getSinglePage<BlogPost["frontmatter"]>(blog_folder);
+  const services = getSinglePage<ServicePost["frontmatter"]>(services_folder);
 
-  const paths = posts.map((post) => ({
-    single: post.slug!,
+  const paths = services.map((service) => ({
+    single: service.slug!,
   }));
 
   return paths;
 };
 
-const BlogPostPage = async (props: { params: Promise<{ single: string }> }) => {
-  const posts = getSinglePage<BlogPost["frontmatter"]>("blog");
-  const post = posts.find(async (p) => p.slug === (await props.params).single);
+const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
+  const services = getSinglePage<ServicePost["frontmatter"]>("services");
+  const service = services.find(
+    async (s) => s.slug === (await props.params).single
+  );
 
-  if (!post) return notFound();
+  if (!service) return notFound();
 
-  const similarPosts = similarItems(post, posts);
+  const similarServices = similarItems(service, services);
 
   return (
     <>
-      <SeoMeta {...post.frontmatter} />
+      <SeoMeta {...service.frontmatter} />
       <section>
         <div className="bg-primary row justify-center text-center">
           <div
@@ -44,34 +46,35 @@ const BlogPostPage = async (props: { params: Promise<{ single: string }> }) => {
             data-aos-delay="200"
             className="col-10 xl:col-7 pt-[16.25rem] pb-[10rem] text-white"
           >
-            {post.frontmatter.date && (
-              <span>
-                Posted on{" "}
-                {format(new Date(post.frontmatter.date), "MMMM dd, yyyy")}
-              </span>
-            )}
             <h1
               className="text-center pt-3.5 text-white"
-              dangerouslySetInnerHTML={markdownify(post.frontmatter.title)}
+              dangerouslySetInnerHTML={markdownify(service.frontmatter.title)}
             />
           </div>
         </div>
         <div className="container section-sm pb-0">
           <div className="row justify-center">
-            <article className="col-11 mx-auto lg:col-10">
-              {post.frontmatter.image && (
+            <article className="col-11 mx-auto lg:col-10 border-b border-border/20">
+              {service.frontmatter.image && (
                 <div className="pb-10">
                   <ImageFallback
-                    src={post.frontmatter.image}
+                    src={service.frontmatter.image}
                     height={800}
                     width={1200}
-                    alt={post.frontmatter.title}
+                    alt={service.frontmatter.title}
                     className="w-full object-cover aspect-[16/9] rounded-sm"
                   />
                 </div>
               )}
               <div className="content mb-10">
-                <MDXContent content={post.content} />
+                <MDXContent content={service.content} />
+              </div>
+              <div className="flex justify-center mt-16 mb-10">
+                <Button
+                  enable={true}
+                  label="Book your appointment today!"
+                  link="/contact"
+                />
               </div>
             </article>
           </div>
@@ -86,24 +89,24 @@ const BlogPostPage = async (props: { params: Promise<{ single: string }> }) => {
                 data-aos="fade-up-sm"
                 data-aos-delay="150"
                 className="font-medium text-primary uppercase"
-                dangerouslySetInnerHTML={markdownify("BLOG")}
+                dangerouslySetInnerHTML={markdownify("SERVICES")}
               />
               <h2
                 data-aos="fade-up-sm"
                 data-aos-delay="200"
                 className="my-3 font-medium text-primary"
-                dangerouslySetInnerHTML={markdownify("Related Contents")}
+                dangerouslySetInnerHTML={markdownify("Related Services")}
               />
               <div data-aos="fade-up-sm" data-aos-delay="300">
-                <Button enable label="View All" link="/blog" />
+                <Button enable label="View All" link="/services" />
               </div>
             </div>
             <div className="lg:col-8 max-lg:mt-14">
               <div className="row">
-                {similarPosts.map((post, i) => (
-                  <BlogCard
-                    key={post.slug}
-                    post={post}
+                {similarServices.map((service, i) => (
+                  <ServiceCard
+                    key={service.slug}
+                    service={service}
                     index={i}
                     className="md:col-6"
                   />
@@ -117,4 +120,4 @@ const BlogPostPage = async (props: { params: Promise<{ single: string }> }) => {
   );
 };
 
-export default BlogPostPage;
+export default ServicePage;

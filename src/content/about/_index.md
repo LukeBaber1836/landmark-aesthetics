@@ -11,13 +11,13 @@ images_gallery:
   - "/images/about/5.png"
   - "/images/about/6.png"
 
-blog_section:
+service_section:
   enable: true
   title: "What We Offer"
   subtitle: "The Challenge"
   description: "We specialize in transforming visions into reality. Explore our portfolio of innovative architectural and interior design projects crafted with precision."
-  show_blog_count: 3
-  # All blog are in the `src\content\blog`
+  show_service_count: 3
+  # All service are in the `src\content\service`
 
 team_section:
   enable: true

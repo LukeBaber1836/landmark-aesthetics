@@ -1,4 +1,4 @@
-import BlogCard from "@/components/BlogCard";
+import ServiceCard from "@/components/ServiceCard";
 import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -7,11 +7,11 @@ import FAQs from "@/partials/FAQs";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import Testimonial from "@/partials/Testimonial";
-import type { AboutPage, BlogPost, Faqs, ReviewPage } from "@/types";
+import type { AboutPage, ServicePost, Faqs, ReviewPage } from "@/types";
 
 export default function AboutPage() {
   const about = getListPage<AboutPage["frontmatter"]>("about/_index.md");
-  const posts = getSinglePage<BlogPost["frontmatter"]>("blog");
+  const services = getSinglePage<ServicePost["frontmatter"]>("services");
   const testimonial =
     getListPage<ReviewPage["frontmatter"]>("reviews/_index.md");
   const faqsData = getListPage<Faqs["frontmatter"]>("faqs/_index.md");
@@ -22,7 +22,7 @@ export default function AboutPage() {
     meta_title,
     image,
     images_gallery,
-    blog_section,
+    service_section,
     team_section,
   } = about.frontmatter;
 
@@ -132,7 +132,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {blog_section.enable && (
+      {service_section.enable && (
         <section className="section pt-0">
           <div className="container">
             <div className="row g-5 justify-between items-start max-lg:text-center">
@@ -142,7 +142,7 @@ export default function AboutPage() {
                   data-aos-delay="150"
                   className="font-medium text-primary uppercase"
                   dangerouslySetInnerHTML={markdownify(
-                    blog_section.subtitle || "",
+                    service_section.subtitle || ""
                   )}
                 />
                 <h2
@@ -150,7 +150,7 @@ export default function AboutPage() {
                   data-aos-delay="200"
                   className="mt-3 font-medium text-primary"
                   dangerouslySetInnerHTML={markdownify(
-                    blog_section.title || "",
+                    service_section.title || ""
                   )}
                 />
               </div>
@@ -159,17 +159,17 @@ export default function AboutPage() {
                 data-aos-delay="300"
                 className="lg:col-8 h4 text-primary md:indent-20 text-center lg:text-left"
                 dangerouslySetInnerHTML={markdownify(
-                  blog_section.description || "",
+                  service_section.description || ""
                 )}
               />
             </div>
 
             <div className="row g-4 section-sm pb-0">
-              {posts
-                ?.filter((post) => post.frontmatter.featured)
-                .slice(0, blog_section.show_blog_count || 3)
-                .map((post, i) => (
-                  <BlogCard key={post.slug} index={i} post={post} />
+              {services
+                ?.filter((service) => service.frontmatter.featured)
+                .slice(0, service_section.show_service_count || 3)
+                .map((service, i) => (
+                  <ServiceCard key={service.slug} index={i} service={service} />
                 ))}
             </div>
           </div>
@@ -190,7 +190,7 @@ export default function AboutPage() {
                   data-aos-delay="150"
                   className="font-medium text-primary uppercase"
                   dangerouslySetInnerHTML={markdownify(
-                    team_section.subtitle || "",
+                    team_section.subtitle || ""
                   )}
                 />
                 <h2
@@ -198,7 +198,7 @@ export default function AboutPage() {
                   data-aos-delay="200"
                   className="mt-3 font-medium text-primary"
                   dangerouslySetInnerHTML={markdownify(
-                    team_section.title || "",
+                    team_section.title || ""
                   )}
                 />
               </div>

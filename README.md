@@ -82,7 +82,6 @@ npm run format
 
 Content is managed through Markdown files located in the `src/content/` directory:
 
-- **Blog posts:** `src/content/blog/`
 - **Projects:** `src/content/projects/`
 - **Pages:** `src/content/pages/`
 - **Services:** `src/content/services/`
