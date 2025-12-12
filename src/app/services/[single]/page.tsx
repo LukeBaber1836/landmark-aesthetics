@@ -34,7 +34,10 @@ const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
 
   if (!service) return notFound();
 
-  const similarServices = similarItems(service, services);
+  // Get 2 random services excluding the current one
+  const otherServices = services.filter((s) => s.slug !== service.slug);
+  const shuffled = otherServices.sort(() => 0.5 - Math.random());
+  const randomServices = shuffled.slice(0, 2);
 
   return (
     <>
@@ -103,7 +106,7 @@ const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
             </div>
             <div className="lg:col-8 max-lg:mt-14">
               <div className="row">
-                {similarServices.map((service, i) => (
+                {randomServices.map((service, i) => (
                   <ServiceCard
                     key={service.slug}
                     service={service}

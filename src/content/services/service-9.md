@@ -5,13 +5,15 @@ description: "Reduce wrinkles and fine lines with our expert Botox treatments."
 date: 2025-05-04T05:00:00Z
 image: "/images/services/service-1.png"
 categories: ["Home"]
-featured: true
+featured: false
 draft: false
 ---
 
 #### How does it work and what are the benefits?
 
 Botox injections work by temporarily paralyzing the muscles responsible for wrinkles and fine lines. The active ingredient, botulinum toxin, blocks nerve signals to these muscles, preventing them from contracting. This results in a smoother and more youthful appearance of the skin.
+
+![example image](/images/projects/a.png)
 
 #### What you should do before treatment?
 

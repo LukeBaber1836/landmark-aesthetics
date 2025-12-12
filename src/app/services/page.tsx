@@ -1,6 +1,4 @@
 import ServiceCard from "@/components/ServiceCard";
-import Pagination from "@/components/Pagination";
-import config from "@/config/config.json";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import CallToAction from "@/partials/CallToAction";
@@ -18,8 +16,6 @@ const ServicesIndexPage = () => {
     `${SERVICES_FOLDER}/_index.md`
   );
   const sortedServices = sortByDate(services);
-  const totalPages = Math.ceil(services.length / config.settings.pagination);
-  const currentServices = sortedServices.slice(0, config.settings.pagination);
 
   return (
     <>
@@ -28,14 +24,9 @@ const ServicesIndexPage = () => {
       <section className="section">
         <div className="container">
           <div className="row">
-            {currentServices.map((service, i) => (
+            {sortedServices.map((service, i) => (
               <ServiceCard key={service.slug} service={service} index={i} />
             ))}
-            <Pagination
-              section={SERVICES_FOLDER}
-              currentPage={1}
-              totalPages={totalPages}
-            />
           </div>
         </div>
       </section>
