@@ -6,6 +6,7 @@ date: 2025-05-06T05:00:00Z
 image: "/images/services/service-1.png"
 categories: ["injectables"]
 featured_in_homepage: true
+link: "/services/botox-and-fillers"
 features:
   - name: "Advanced wrinkle reduction"
     description: "Botox works by temporarily relaxing the muscles that cause wrinkles, resulting in smoother skin."

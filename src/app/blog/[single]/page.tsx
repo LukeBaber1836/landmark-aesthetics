@@ -66,7 +66,7 @@ const BlogPostPage = async (props: { params: Promise<{ single: string }> }) => {
                     height={800}
                     width={1200}
                     alt={post.frontmatter.title}
-                    className="w-full object-cover aspect-[16/9]"
+                    className="w-full object-cover aspect-[16/9] rounded-sm"
                   />
                 </div>
               )}

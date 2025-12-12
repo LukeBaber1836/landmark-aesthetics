@@ -37,8 +37,8 @@
       ]
     },
     {
-      "name": "Works",
-      "url": "/projects"
+      "name": "Services",
+      "url": "/services"
     },
     {
       "name": "Contact",
@@ -50,8 +50,8 @@
       "title": "Quick Links",
       "children": [
         {
-          "name": "Projects",
-          "url": "/projects"
+          "name": "Services",
+          "url": "/services"
         },
         {
           "name": "About Us",
@@ -60,10 +60,6 @@
         {
           "name": "Contact",
           "url": "/contact"
-        },
-        {
-          "name": "Career",
-          "url": "/career"
         }
       ]
     },

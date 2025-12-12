@@ -18,7 +18,7 @@ export default function BlogCard({ post, index, className }: Props) {
       data-aos-delay={index * 100 + 150}
       className={`${className ? className : "col-11 sm:col-9 md:col-6 lg:col-4"} mb-12 last:mb-0 mx-auto relative group`}
     >
-      <div className="overflow-hidden">
+      <div className="overflow-hidden rounded-3xl shadow-lg shadow-black/20">
         <ImageFallback
           src={image!}
           alt={title}

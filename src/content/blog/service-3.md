@@ -1,9 +1,9 @@
 ---
-title: "Exploring the World of Interior Inspiration"
+title: "Body Contouring"
 meta_title: ""
-description: "From minimalist chic to bohemian flair, we'll delve into a myriad of design styles"
+description: "Tone your body and eliminate stubborn fat with our non-invasive body contouring treatments."
 date: 2025-05-04T05:00:00Z
-image: "/images/blog/1.png"
+image: "/images/services/service-3.png"
 categories: ["Home"]
 featured: true
 draft: false

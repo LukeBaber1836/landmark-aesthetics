@@ -34,6 +34,7 @@ export interface Page {
     title: string;
     meta_title?: string;
     description?: string;
+    link?: string;
     image?: string;
     canonical?: string;
     noindex?: boolean;
@@ -189,8 +190,8 @@ export interface CareerPage extends Page {
 }
 
 export interface GalleryImage {
-  design: string;
-  designer: string;
+  procedure: string;
+  benefit: string;
   image: string;
 }
 

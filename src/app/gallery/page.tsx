@@ -12,7 +12,7 @@ export default function GalleryPage() {
       <SeoMeta {...galleryIndex.frontmatter} />
       <section className="section">
         <div className="container">
-          <div className="md:columns-2 gap-x-[150px]">
+          <div className="grid grid-flow-row lg:grid-cols-4 md:grid-cols-2 gap-x-[50px]">
             {galleryIndex.frontmatter.gallery_images?.map((item, i) => (
               <GalleryCard key={i} item={item} index={i} />
             ))}

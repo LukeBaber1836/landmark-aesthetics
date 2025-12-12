@@ -6,6 +6,7 @@ import FAQs from "@/partials/FAQs";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import { Faqs, ServicePage } from "@/types";
+import Button from "@/components/Button";
 
 const ServicesPage = () => {
   const servicesIndex =
@@ -46,7 +47,7 @@ const ServicesPage = () => {
                   data-aos-delay="150"
                   className="h4 pb-24"
                   dangerouslySetInnerHTML={markdownify(
-                    service.frontmatter.title,
+                    service.frontmatter.title
                   )}
                 />
 
@@ -67,11 +68,13 @@ const ServicesPage = () => {
                     <p
                       className="text-balance"
                       dangerouslySetInnerHTML={markdownify(
-                        feature.description || "",
+                        feature.description || ""
                       )}
                     />
                   </div>
                 ))}
+
+                <Button label="Learn More" link={service.frontmatter.link} />
               </div>
             </div>
           ))}

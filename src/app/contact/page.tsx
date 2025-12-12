@@ -23,7 +23,7 @@ const ContactPage = () => {
         image={image}
       />
       <PageHeader title={title} isContactPage />
-      <section className="-mt-[45%] sm:-mt-[30%] md:-mt-[25%] lg:-mt-[40%] xl:-mt-[30%] 2xl:-mt-[23%]">
+      <section className="-mt-[45%] sm:-mt-[30%] md:-mt-[25%] lg:-mt-[35%] xl:-mt-[30%] 2xl:-mt-[23%]">
         <div className="container">
           <div className="flex flex-col lg:flex-row gap-20 justify-center lg:justify-between">
             <div className="lg:w-[52%]">
@@ -106,7 +106,7 @@ const ContactPage = () => {
               </form>
             </div>
 
-            <div className="lg:w-[40%] self-center lg:self-end pb-14">
+            <div className="lg:w-[55%] self-center lg:self-end pb-14">
               <h3
                 data-aos="fade-up-sm"
                 data-aos-delay="150"
@@ -118,12 +118,12 @@ const ContactPage = () => {
                 data-aos-delay="200"
                 className="text-balance"
                 dangerouslySetInnerHTML={markdownify(
-                  address_section.description,
+                  address_section.description
                 )}
               />
 
-              <ul className="grid grid-cols-2 gap-8 mt-12">
-                <li data-aos="fade-up-sm" data-aos-delay="250">
+              <ul className="grid xl:grid-cols-2 lg:grid-cols-1  md:grid-cols-2 gap-8 mt-12">
+                <li data-aos="fade-up-sm w-fit" data-aos-delay="250">
                   <h4 className="h6 mb-3">Working Mail</h4>
                   <Link href={`mailto:${config.params.email}`}>
                     {config.params.email}
@@ -140,7 +140,7 @@ const ContactPage = () => {
                   <Link
                     target="_blank"
                     href={`https://www.google.com/maps?q=${encodeURIComponent(
-                      config.params.address,
+                      config.params.address
                     )}`}
                     dangerouslySetInnerHTML={markdownify(config.params.address)}
                   />
@@ -150,7 +150,7 @@ const ContactPage = () => {
           </div>
         </div>
       </section>
-      <CallToAction isNoSectionTop isNoSectionBottom />
+      {/* <CallToAction isNoSectionTop isNoSectionBottom /> */}
     </>
   );
 };

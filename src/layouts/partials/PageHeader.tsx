@@ -19,7 +19,7 @@ const PageHeader = ({
               <h1
                 data-aos="zoom-out-sm"
                 data-aos-delay="150"
-                className="text-white"
+                className="text-white text-shadow-sm text-shadow-black/30"
               >
                 {humanize(title)}
               </h1>

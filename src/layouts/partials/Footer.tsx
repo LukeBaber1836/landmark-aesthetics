@@ -11,8 +11,8 @@ export default function Footer() {
   const { footer_title, address, phone, email, footer_content } = config.params;
   return (
     <footer className="section pb-0 bg-primary">
-      <div className="container">
-        <div className="row max-md:justify-center gx-4">
+      <div className="container mx-auto">
+        <div className="row max-md:justify-center">
           <div className="md:col-6 lg:col-5 max-md:text-center">
             <h2
               data-aos="fade-up-sm"
@@ -36,7 +36,7 @@ export default function Footer() {
                   <div
                     data-aos="fade-up-sm"
                     data-aos-delay={i * 100 + 200}
-                    className="col-10 md:col-6 lg:col-3 pr-0"
+                    className="col-4 md:col-6 lg:col-3 pr-0"
                     key={i}
                   >
                     <h5 className="mb-7 font-normal text-base lg:mb-6 text-text-light/50">
@@ -58,9 +58,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="row section xl:w-[1450px] lg:w-[1300px] mx-auto">
+        <div className="row xl:w-[1462px] lg:w-[1224px]">
           <div className="md:col-10">
-            <div className="row g-5 md:justify-between justify-center">
+            <div className="row md:justify-between justify-center mx-auto md:mt-10 mb-10">
               <div
                 data-aos="fade-up-sam"
                 data-aos-delay="300"
@@ -71,7 +71,7 @@ export default function Footer() {
                   width={215}
                   height={52}
                   alt="footer logo"
-                  className="mb-3 max-md:mx-auto"
+                  className="mb-3 max-md:mx-auto sm:translate-x-0 translate-x-4"
                   loading="lazy"
                 />
                 <p
@@ -85,7 +85,7 @@ export default function Footer() {
                 className="col-10 md:col-6 lg:col-3 max-md:text-center"
               >
                 <ul>
-                  <li className="mb-4 text-text-light text-base hover:text-secondary text-lg!">
+                  <li className="my-4 text-text-light text-base hover:text-secondary text-lg!">
                     <Link href={`tel:${phone}`}>{phone}</Link>
                   </li>
                   <li className="mb-4 text-text-light text-base hover:text-secondary text-lg!">
@@ -107,7 +107,7 @@ export default function Footer() {
                 data-aos-delay="450"
                 className="col-10 md:col-6 lg:col-3 max-md:text-center"
               >
-                <ul className="flex flex-col gap-3 max-md:items-center max-md:[&>li]:ml-6">
+                <ul className="flex flex-col gap-3 max-md:items-center max-md:[&>li]:ml-6 mt-4 lg:mb-0 mb-10">
                   {social.main.map((item, index) => (
                     <li key={index}>
                       <ArrowBtn label={item.name} link={item.link} />

@@ -1,11 +1,11 @@
 ---
-title: "Unlocking the Secrets of Stylish Spaces"
+title: "Laser Hair Removal"
 meta_title: ""
-description: "From minimalist chic to bohemian flair, we'll delve into a myriad of design styles"
+description: "Reduce unwanted hair with our advanced laser hair removal treatments for smooth, long-lasting results."
 date: 2025-05-04T05:00:00Z
-image: "/images/blog/7.png"
-categories: ["Outside"]
-featured: false
+image: "/images/services/service-2.png"
+categories: ["Home"]
+featured: true
 draft: false
 ---
 

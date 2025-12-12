@@ -1,11 +1,11 @@
 ---
-title: "Crafting Your Perfect Home Oasis"
+title: "Botox and Fillers"
 meta_title: ""
-description: "From minimalist chic to bohemian flair, we'll delve into a myriad of design styles"
+description: "Reduce wrinkles and fine lines with our expert Botox treatments."
 date: 2025-05-04T05:00:00Z
-image: "/images/blog/6.png"
-categories: ["Office"]
-featured: false
+image: "/images/services/service-1.png"
+categories: ["Home"]
+featured: true
 draft: false
 ---
 
