@@ -19,12 +19,14 @@ By using our services or website, you agree to the collection and use of informa
 We collect several types of information to provide and improve our services:
 
 **Personal Information:**
+
 - Name, email address, phone number, and mailing address
 - Date of birth and demographic information
 - Payment and billing information (processed securely through Square)
 - Emergency contact information
 
 **Health and Treatment Information:**
+
 - Medical history relevant to aesthetic treatments
 - Information about allergies, medications, and health conditions
 - Treatment preferences and consultation notes
@@ -32,12 +34,14 @@ We collect several types of information to provide and improve our services:
 - Records of treatments and procedures received
 
 **Website Usage Information:**
+
 - IP address, browser type, and device information
 - Pages visited, time spent on pages, and navigation patterns
 - Cookies and similar tracking technologies for site improvement
 - Analytics data collected through Google Analytics
 
 **Communication Information:**
+
 - Correspondence through email, phone, online forms, or social media
 - Appointment scheduling and reminder communications
 - Marketing communications (only with your consent)
@@ -49,6 +53,7 @@ We collect several types of information to provide and improve our services:
 We use your information for the following purposes:
 
 **To Provide Services:**
+
 - Schedule and manage appointments and consultations
 - Deliver aesthetic treatments and personalized care
 - Maintain accurate treatment records and medical documentation
@@ -56,17 +61,20 @@ We use your information for the following purposes:
 - Send appointment reminders and follow-up care instructions
 
 **To Improve Our Services:**
+
 - Analyze website usage to enhance user experience
 - Improve our treatments and service offerings
 - Conduct quality assurance and training
 - Respond to your questions, feedback, and requests
 
 **For Communication:**
+
 - Send service-related updates and notifications
 - Provide marketing communications about new treatments and special offers (with your consent)
 - Respond to inquiries submitted through phone, email, forms, or social media
 
 **For Legal and Safety Purposes:**
+
 - Comply with HIPAA regulations and other legal obligations
 - Protect the rights, property, and safety of Landmark Aesthetics, our clients, and others
 - Prevent fraud and ensure transaction security
@@ -78,11 +86,13 @@ We use your information for the following purposes:
 We take the security of your personal and health information seriously and implement industry-standard measures to protect it:
 
 **HIPAA Compliance:**
+
 - We are fully HIPAA compliant and follow strict protocols to protect your protected health information (PHI)
 - All staff members are trained in HIPAA privacy and security requirements
 - We maintain physical, technical, and administrative safeguards
 
 **Security Measures:**
+
 - Secure payment processing through Square's encrypted platform
 - Secure storage of physical and electronic records
 - Limited access to personal information on a need-to-know basis
@@ -91,6 +101,7 @@ We take the security of your personal and health information seriously and imple
 - Secure backup systems for data protection
 
 **Data Storage:**
+
 - Client records are stored indefinitely unless you request their removal
 - All data is stored in secure, access-controlled environments
 - Regular backups ensure data integrity and availability
@@ -118,11 +129,13 @@ We may share your information only in the following circumstances:
 Our website uses cookies and similar tracking technologies to enhance your browsing experience:
 
 **What We Use:**
+
 - Essential cookies for website functionality
 - Analytics cookies through Google Analytics to understand site usage
 - Performance cookies to improve website speed and efficiency
 
 **Your Choices:**
+
 - You can disable cookies through your browser settings
 - Disabling cookies may affect certain website features
 - You can opt out of Google Analytics tracking using the Google Analytics Opt-out Browser Add-on
@@ -148,24 +161,29 @@ We use the following third-party services:
 You have the following rights regarding your personal information:
 
 **Access and Review:**
+
 - Request access to your personal and health information
 - Review your treatment records and consultation notes
 
 **Correction:**
+
 - Request corrections to inaccurate or incomplete information
 - Update your contact information and preferences
 
 **Deletion:**
+
 - Request deletion of your personal information
 - Request removal of before and after photos
 - Note: We may retain certain information as required by law or legitimate business purposes
 
 **Opt-Out:**
+
 - Unsubscribe from marketing communications at any time
 - Opt out of non-essential cookies through browser settings
 - Withdraw consent for photo usage
 
 **Data Portability:**
+
 - Request a copy of your information in a portable format
 
 To exercise any of these rights, please contact us at questions@landmarkaesthetics.net.
@@ -175,11 +193,13 @@ To exercise any of these rights, please contact us at questions@landmarkaestheti
 #### 8. Before and After Photos
 
 **Consent Required:**
+
 - We only take before and after photos with your explicit written consent
 - You may withdraw your consent for photo usage at any time
 - Photos are stored securely and used only for purposes you've approved
 
 **Usage:**
+
 - Marketing materials (with permission)
 - Treatment documentation and records
 - Portfolio and website display (with permission)
@@ -189,10 +209,12 @@ To exercise any of these rights, please contact us at questions@landmarkaestheti
 #### 9. Marketing Communications
 
 **Opt-In:**
+
 - We will only send marketing communications if you've opted in
 - You can subscribe to newsletters, promotions, and treatment updates
 
 **Opt-Out:**
+
 - Unsubscribe links are included in all marketing emails
 - Contact us to remove your information from our marketing lists
 - Opting out of marketing does not affect service-related communications
@@ -202,10 +224,12 @@ To exercise any of these rights, please contact us at questions@landmarkaestheti
 #### 10. Data Retention
 
 **Retention Period:**
+
 - We retain your personal and health information indefinitely to maintain comprehensive treatment records
 - This ensures continuity of care and compliance with medical recordkeeping standards
 
 **Deletion Requests:**
+
 - You may request deletion of your information at any time
 - We will honor deletion requests except where retention is required by law or necessary for legitimate business purposes
 - Deletion may affect our ability to provide future services
