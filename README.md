@@ -2,6 +2,10 @@
 
 This is the official website for Landmark Aesthetics in Jacksonville, TX, built with Next.js.
 
+## Theme:
+
+[Landmark Aesthetics Color Pallet](https://www.figma.com/color-palette-generator/?colors=415947-4B3D2A-F4EDD9-767676)
+
 ## Tech Stack
 
 - **Framework:** [Next.js 15](https://nextjs.org/)
