@@ -26,6 +26,7 @@ export interface ServicePost extends Page {
     categories: string[];
     featured?: boolean;
     date: string;
+    pricing?: string;
   };
 }
 
@@ -36,6 +37,8 @@ export interface Page {
     description?: string;
     link?: string;
     image?: string;
+    image_wide?: string;
+    booking_link?: string;
     canonical?: string;
     noindex?: boolean;
     draft?: boolean;
@@ -65,10 +68,16 @@ export interface TeamSection {
   members: TeamMember[];
 }
 
+export interface LandmarkSection {
+  enable: boolean;
+  heading?: string;
+}
+
 export interface AboutPage extends Page {
   frontmatter: Page["frontmatter"] & {
     images_gallery: string[];
     service_section: ServiceSection;
+    landmark_section?: LandmarkSection;
     team_section: TeamSection;
   };
 }

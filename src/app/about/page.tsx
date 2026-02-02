@@ -1,5 +1,6 @@
 import ServiceCard from "@/components/ServiceCard";
 import ImageFallback from "@/helpers/ImageFallback";
+import MDXContent from "@/helpers/MDXContent";
 import { getListPage, getSinglePage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction";
@@ -23,6 +24,7 @@ export default function AboutPage() {
     image,
     images_gallery,
     service_section,
+    landmark_section,
     team_section,
   } = about.frontmatter;
 
@@ -44,20 +46,20 @@ export default function AboutPage() {
           />
 
           <div className="flex flex-row gap-4 md:gap-6 items-center mt-14 overflow-hidden">
-            <div className="w-[24%]">
+            <div className="w-[24%] lg:ml-5 ml-3.5">
               <div data-aos="zoom-in-sm" data-aos-delay="150">
                 <ImageFallback
                   src={images_gallery[0]}
                   alt="NextSpace"
                   width={294}
                   height={352}
-                  className="object-contain object-top w-full"
+                  className="object-contain object-top w-full rounded-xl shadow-lg shadow-black/40"
                 />
               </div>
             </div>
 
             <div className="w-full xl:w-[80%] flex flex-col gap-4 md:gap-6">
-              <div className="flex flex-row gap-4 md:gap-6">
+              <div className="flex flex-row gap-4 md:gap-6 mr-5">
                 <div
                   data-aos="zoom-in-sm"
                   data-aos-delay="150"
@@ -68,7 +70,7 @@ export default function AboutPage() {
                     alt="NextSpace"
                     width={294}
                     height={352}
-                    className="object-contain object-bottom w-full"
+                    className="object-contain object-bottom w-full rounded-xl shadow-lg shadow-black/40"
                   />
                 </div>
                 <div
@@ -81,7 +83,7 @@ export default function AboutPage() {
                     alt="NextSpace"
                     width={290}
                     height={258}
-                    className="object-contain object-bottom w-full"
+                    className="object-contain object-bottom w-full rounded-xl shadow-lg shadow-black/40"
                   />
                 </div>
                 <div
@@ -94,12 +96,12 @@ export default function AboutPage() {
                     alt="NextSpace"
                     width={263}
                     height={310}
-                    className="object-contain object-bottom w-full"
+                    className="object-contain object-bottom w-full rounded-xl shadow-lg shadow-black/40"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-row gap-4 md:gap-6">
+              <div className="flex flex-row gap-4 md:gap-6 mb-8">
                 <div
                   data-aos="zoom-in-sm"
                   data-aos-delay="300"
@@ -110,7 +112,7 @@ export default function AboutPage() {
                     alt="NextSpace"
                     width={390}
                     height={258}
-                    className="object-contain object-top w-full"
+                    className="object-contain object-top w-full rounded-xl shadow-lg shadow-black/40"
                   />
                 </div>
                 <div
@@ -123,7 +125,7 @@ export default function AboutPage() {
                     alt="NextSpace"
                     width={290}
                     height={208}
-                    className="object-contain object-top max-sm:w-full"
+                    className="object-contain object-top max-sm:w-full rounded-xl shadow-lg shadow-black/40"
                   />
                 </div>
               </div>
@@ -142,7 +144,7 @@ export default function AboutPage() {
                   data-aos-delay="150"
                   className="font-medium text-primary uppercase"
                   dangerouslySetInnerHTML={markdownify(
-                    service_section.subtitle || ""
+                    service_section.subtitle || "",
                   )}
                 />
                 <h2
@@ -150,7 +152,7 @@ export default function AboutPage() {
                   data-aos-delay="200"
                   className="mt-3 font-medium text-primary"
                   dangerouslySetInnerHTML={markdownify(
-                    service_section.title || ""
+                    service_section.title || "",
                   )}
                 />
               </div>
@@ -159,7 +161,7 @@ export default function AboutPage() {
                 data-aos-delay="300"
                 className="lg:col-8 h4 text-primary md:indent-20 text-center lg:text-left"
                 dangerouslySetInnerHTML={markdownify(
-                  service_section.description || ""
+                  service_section.description || "",
                 )}
               />
             </div>
@@ -176,7 +178,13 @@ export default function AboutPage() {
         </section>
       )}
 
-      <Testimonial isNoSectionTop testimonial={testimonial} />
+      {landmark_section?.enable && about.content && (
+        <section className="section pt-0">
+          <div className="content container">
+            <MDXContent content={about.content} />
+          </div>
+        </section>
+      )}
 
       {/* Team Section */}
       {team_section.enable && (
@@ -190,7 +198,7 @@ export default function AboutPage() {
                   data-aos-delay="150"
                   className="font-medium text-primary uppercase"
                   dangerouslySetInnerHTML={markdownify(
-                    team_section.subtitle || ""
+                    team_section.subtitle || "",
                   )}
                 />
                 <h2
@@ -198,7 +206,7 @@ export default function AboutPage() {
                   data-aos-delay="200"
                   className="mt-3 font-medium text-primary"
                   dangerouslySetInnerHTML={markdownify(
-                    team_section.title || ""
+                    team_section.title || "",
                   )}
                 />
               </div>

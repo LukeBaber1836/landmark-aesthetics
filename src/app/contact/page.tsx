@@ -30,7 +30,7 @@ const ContactPage = () => {
               <form
                 data-aos="fade-right-sm"
                 data-aos-delay="150"
-                className="bg-primary px-12 py-14"
+                className="bg-primary px-12 py-14 rounded-t-3xl"
                 action={contact_form_action}
                 method="POST"
               >
@@ -79,7 +79,7 @@ const ContactPage = () => {
                     id="name"
                     name="name"
                     className="form-input"
-                    placeholder="Want to decor my house"
+                    placeholder="Question about a treatment..."
                     type="text"
                     required
                   />
@@ -92,7 +92,7 @@ const ContactPage = () => {
                     id="message"
                     name="message"
                     className="form-input"
-                    placeholder="Write your messages..."
+                    placeholder="Write your message..."
                     rows={3}
                     required
                   ></textarea>
@@ -118,7 +118,7 @@ const ContactPage = () => {
                 data-aos-delay="200"
                 className="text-balance"
                 dangerouslySetInnerHTML={markdownify(
-                  address_section.description
+                  address_section.description,
                 )}
               />
 
@@ -140,7 +140,7 @@ const ContactPage = () => {
                   <Link
                     target="_blank"
                     href={`https://www.google.com/maps?q=${encodeURIComponent(
-                      config.params.address
+                      config.params.address,
                     )}`}
                     dangerouslySetInnerHTML={markdownify(config.params.address)}
                   />

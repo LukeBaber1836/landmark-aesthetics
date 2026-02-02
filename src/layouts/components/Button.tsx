@@ -24,7 +24,7 @@ const Button: React.FC<Props> = ({
     className === "btn-primary"
       ? "bg-primary"
       : className === "btn-outline"
-        ? "bg-white/50"
+        ? "bg-body"
         : className === "btn-secondary"
           ? "bg-body"
           : "bg-body";
@@ -53,7 +53,7 @@ const Button: React.FC<Props> = ({
               />
             </span>
             <span
-              className={`relative z-10 transition-colors duration-500 inline ${textHoverClass}`}
+              className={`relative z-10 transition-colors duration-300 inline ${textHoverClass}`}
             >
               {label}
               {showIcon && (
@@ -81,13 +81,13 @@ const Button: React.FC<Props> = ({
             className={`btn ${className} relative overflow-hidden inline-block group`}
             disabled={!enable}
           >
-            <span className="absolute left-1/2 top-0 h-full w-0 -translate-x-1/2 transition-all duration-500 [transition-timing-function:cubic-bezier(1,0,1,1)] group-hover:w-[200%]">
+            <span className="absolute left-1/2 top-0 h-full w-0 -translate-x-1/2 transition-all duration-300 [transition-timing-function:cubic-bezier(1,0,1,1)] group-hover:w-[200%]">
               <span
                 className={`block h-full w-full skew-x-[45deg] ${bgHoverClass}`}
               />
             </span>
             <span
-              className={`relative z-10 transition-colors duration-500 inline ${textHoverClass}`}
+              className={`relative z-10 transition-colors duration-300 inline ${textHoverClass}`}
             >
               {label}
               {showIcon && (

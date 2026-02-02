@@ -18,7 +18,7 @@
   @apply relative flex flex-wrap items-center justify-start rounded-full border border-border/80 bg-body/80 px-6 backdrop-blur-md max-lg:py-4 sm:justify-end lg:justify-between lg:pl-5 lg:pr-2;
 }
 .navbar-nav {
-  @apply max-h-[calc(100vh_-_100px)] max-lg:absolute max-lg:top-full max-lg:z-10 max-lg:overflow-auto max-lg:rounded-2xl max-lg:border max-lg:border-border max-lg:bg-white max-lg:px-4 max-lg:py-6 max-lg:shadow max-sm:left-0 max-sm:w-full sm:w-[calc(100%_-_48px)] max-lg:mt-2;
+  @apply max-h-[calc(100vh_-_100px)] max-lg:absolute max-lg:top-full max-lg:z-10 max-lg:overflow-auto max-lg:rounded-2xl max-lg:border max-lg:border-border max-lg:bg-primary max-lg:px-4 max-lg:py-6 max-lg:shadow max-sm:left-0 max-sm:w-full sm:w-[calc(100%_-_48px)] max-lg:mt-2;
 
   .nav-item {
     &.active {
@@ -30,7 +30,7 @@
       }
     }
     .nav-link {
-      @apply relative inline-block overflow-hidden px-2 py-3 lg:px-4 lg:py-6 align-middle text-primary hover:opacity-80 transition duration-300 font-medium;
+      @apply relative inline-block overflow-hidden px-2 py-3 lg:px-4 lg:py-6 align-middle text-primary hover:opacity-80 transition duration-300 font-medium max-lg:text-secondary;
 
       .arrow-icon {
         @apply relative -z-10 inline-block align-[-2px] text-xs/snug transition-transform duration-300;

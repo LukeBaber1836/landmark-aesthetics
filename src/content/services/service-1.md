@@ -4,6 +4,9 @@ meta_title: ""
 description: "Reduce wrinkles and fine lines with our expert Botox treatments."
 date: 2025-05-04T05:00:00Z
 image: "/images/services/service-1.png"
+image_wide: "/images/services/service-1-wide.png"
+booking_link: "https://book.squareup.com/appointments/51hzr9omifv4pi/location/FWK61X6ZFH361/services/DGVKAUBS2J33UFHJT4PZ5P5Q"
+pricing: "$11 per unit"
 categories: ["Home"]
 featured: true
 draft: false

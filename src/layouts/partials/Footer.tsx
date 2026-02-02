@@ -25,24 +25,24 @@ export default function Footer() {
                 enable={config.footer_button.enable}
                 label={config.footer_button.label}
                 link={config.footer_button.link}
-                style="btn-secondary"
+                style="btn-outline"
               />
             </div>
           </div>
           <div className="md:col-6 lg:col-7 ml-auto max-md:mt-14">
             <div className="mb-10 lg:mb-8">
-              <div className="row max-lg:gy-4 justify-center max-md:text-center lg:justify-end">
+              <div className="row max-lg:gy-4 justify-center max-md:text-center lg:justify-end space-x-10">
                 {menu.footer.map((menu, i) => (
                   <div
                     data-aos="fade-up-sm"
                     data-aos-delay={i * 100 + 200}
-                    className="col-4 md:col-6 lg:col-3 pr-0"
+                    className="flex flex-col items-center col-4 md:col-6 lg:col-3 pr-0 w-fit"
                     key={i}
                   >
                     <h5 className="mb-7 font-normal text-base lg:mb-6 text-text-light/50">
                       {menu.title}
                     </h5>
-                    <ul>
+                    <ul className="flex flex-col flex-nowrap items-center w-fit text-center">
                       {menu.children.map((child) => (
                         <li
                           className="mb-4 text-text-light text-base hover:text-secondary text-lg!"
@@ -54,6 +54,27 @@ export default function Footer() {
                     </ul>
                   </div>
                 ))}
+                <div
+                  data-aos="fade-up-sm"
+                  data-aos-delay={menu.footer.length * 100 + 200}
+                  className="flex flex-col items-center col-4 md:col-6 lg:col-3 pr-0 w-fit"
+                >
+                  <h5 className="mb-7 font-normal text-base lg:mb-6 text-text-light/50">
+                    Socials
+                  </h5>
+                  <ul className="flex flex-col items-center">
+                    {social.main.map((item, index) => (
+                      <li
+                        key={index}
+                        className="mb-4 text-text-light text-base hover:text-secondary text-lg!"
+                      >
+                        <Link href={item.link} target="_blank">
+                          {item.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -82,9 +103,9 @@ export default function Footer() {
               <div
                 data-aos="fade-up-sm"
                 data-aos-delay="350"
-                className="col-10 md:col-6 lg:col-3 max-md:text-center"
+                className="col-10 md:col-6 lg:col-3 max-md:right w-full"
               >
-                <ul>
+                <ul className="flex flex-col items-center md:items-end mt-8 md:mt-0">
                   <li className="my-4 text-text-light text-base hover:text-secondary text-lg!">
                     <Link href={`tel:${phone}`}>{phone}</Link>
                   </li>
@@ -95,28 +116,28 @@ export default function Footer() {
                     <Link
                       target="_blank"
                       href={`https://www.google.com/maps?q=${encodeURIComponent(
-                        address
+                        address,
                       )}`}
                       dangerouslySetInnerHTML={markdownify(address)}
                     />
                   </li>
                 </ul>
               </div>
-              <div
-                data-aos="fade-up-sm"
-                data-aos-delay="450"
-                className="col-10 md:col-6 lg:col-3 max-md:text-center"
-              >
-                <ul className="flex flex-col gap-3 max-md:items-center max-md:[&>li]:ml-6 mt-4 lg:mb-0 mb-10">
-                  {social.main.map((item, index) => (
-                    <li key={index}>
-                      <ArrowBtn label={item.name} link={item.link} />
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </div>
+        </div>
+        <div className="border-t border-text-light/20 py-8 mt-10 text-center">
+          <p className="text-text-light/70 text-sm">
+            Website by{" "}
+            <Link
+              href="https://www.lukebaber.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary hover:text-white"
+            >
+              Luke Baber
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

@@ -19,7 +19,7 @@ const HeroBanner = ({
               <h1
                 data-aos="fade-up-sm"
                 data-aos-delay="100"
-                className="h2 md:h1 text-white z-30 lg:text-[5rem] font-medium xl:leading-[6.56rem] tracking-tight text-balance text-shadow-lg text-shadow-black/20"
+                className="h2 md:h1 text-white z-30 lg:text-[5rem] font-medium xl:leading-[6.56rem] tracking-tight text-balance text-shadow-lg text-shadow-black/50"
                 dangerouslySetInnerHTML={markdownify(banner.title)}
               />
               {/* Rotating Text Decoration */}
@@ -81,7 +81,7 @@ const HeroBanner = ({
               <p
                 data-aos="fade-up-sm"
                 data-aos-delay="300"
-                className="text-xl text-white/85 flex-1 text-balance leading-[34px] text-shadow-lg text-shadow-black/20"
+                className="text-xl text-white flex-1 text-balance leading-[34px] text-shadow-lg text-shadow-black/20"
                 dangerouslySetInnerHTML={markdownify(banner.content)}
               />
               <div data-aos="fade-up-sm" data-aos-delay="450">

@@ -27,10 +27,9 @@ export const generateStaticParams: () => { single: string }[] = () => {
 };
 
 const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
+  const params = await props.params;
   const services = getSinglePage<ServicePost["frontmatter"]>("services");
-  const service = services.find(
-    async (s) => s.slug === (await props.params).single
-  );
+  const service = services.find((s) => s.slug === params.single);
 
   if (!service) return notFound();
 
@@ -61,22 +60,32 @@ const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
               {service.frontmatter.image && (
                 <div className="pb-10">
                   <ImageFallback
-                    src={service.frontmatter.image}
-                    height={800}
-                    width={1200}
+                    src={service.frontmatter.image_wide}
+                    height={600}
+                    width={900}
                     alt={service.frontmatter.title}
-                    className="w-full object-cover aspect-[16/9] rounded-sm"
+                    className="w-[calc[100%-30px]] mx-auto object-cover aspect-video rounded-3xl shadow-lg"
                   />
                 </div>
               )}
               <div className="content mb-10">
                 <MDXContent content={service.content} />
               </div>
+              {service.frontmatter.pricing && (
+                <div className="mx-10 text-center my-16 py-8 px-6rounded-3xl border border-border/20 rounded-2xl inset-shadow-sm">
+                  <h3 className="text-h4 font-medium text-primary mb-2">
+                    Pricing
+                  </h3>
+                  <p className="text-2xl font-medium text-text">
+                    {service.frontmatter.pricing}
+                  </p>
+                </div>
+              )}
               <div className="flex justify-center mt-16 mb-10">
                 <Button
                   enable={true}
                   label="Book your appointment today!"
-                  link="/contact"
+                  link={service.frontmatter.booking_link || "#"}
                 />
               </div>
             </article>

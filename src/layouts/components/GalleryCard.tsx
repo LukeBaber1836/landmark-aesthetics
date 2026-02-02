@@ -11,9 +11,9 @@ export default function GalleryCard({
 }) {
   return (
     <div
-      data-aos="fade-up-sm"
-      data-aos-delay={index * 100 + 100}
-      className="relative mb-[7rem] last:mb-0 group max-md:w-[80%] mx-auto pb-16"
+      // data-aos="fade-up-sm"
+      // data-aos-delay={index * 100 + 100}
+      className="relative mb-[7rem] group max-md:w-[80%] mx-auto pb-16"
     >
       <div className="overflow-hidden">
         <ImageFallback

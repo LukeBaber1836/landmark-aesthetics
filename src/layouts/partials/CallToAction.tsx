@@ -11,7 +11,7 @@ const CallToAction = ({
   isNoSectionBottom?: boolean;
 }) => {
   const callToActionData = getListPage<CTASection>(
-    "sections/call-to-action.md"
+    "sections/call-to-action.md",
   );
 
   return (
@@ -30,16 +30,16 @@ const CallToAction = ({
                   data-aos-delay="150"
                   className="h1 text-white flex-1 text-shadow-lg"
                   dangerouslySetInnerHTML={markdownify(
-                    callToActionData.frontmatter.title
+                    callToActionData.frontmatter.title,
                   )}
                 />
                 <div className="flex-1">
                   <p
                     data-aos="fade-up-sm"
                     data-aos-delay="250"
-                    className="mt-4 text-white/90 text-balance text-lg text-shadow-lg"
+                    className="mt-4 text-white text-balance text-lg text-shadow-lg"
                     dangerouslySetInnerHTML={markdownify(
-                      callToActionData.frontmatter.description
+                      callToActionData.frontmatter.description,
                     )}
                   />
                   <div className="flex flex-wrap gap-5 pt-8 max-lg:justify-center">
@@ -49,7 +49,7 @@ const CallToAction = ({
                     <div data-aos="zoom-in-sm" data-aos-delay="350">
                       <Button
                         {...callToActionData.frontmatter.button_outline}
-                        style="btn-outline backdrop-blur-xs"
+                        style="btn-primary text-primary bg-body"
                       />
                     </div>
                   </div>

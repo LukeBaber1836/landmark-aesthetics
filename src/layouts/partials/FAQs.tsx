@@ -46,7 +46,7 @@ const FAQs = ({
                   data-aos-delay="200"
                   className="mt-3 font-medium text-primary pb-14"
                   dangerouslySetInnerHTML={markdownify(
-                    "Still Have A Question?"
+                    "Still Have A Question?",
                   )}
                 />
                 <div data-aos="fade-up-sm" data-aos-delay="300">

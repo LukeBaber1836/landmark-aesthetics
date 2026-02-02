@@ -5,34 +5,34 @@ description: "this is meta description"
 image: "/images/gallery/7.png"
 
 gallery_images:
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Rachel and Saber
+    benefit: Wellness Consultation
     image: "/images/gallery/1.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Lash Extensions
+    benefit: Beauty Treatment
     image: "/images/gallery/2.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Lip Filler
+    benefit: Dermal Filler
     image: "/images/gallery/3.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Lip Filler
+    benefit: Dermal Filler
     image: "/images/gallery/4.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Rachel and Saber
+    benefit: Wellness Consultation
     image: "/images/gallery/5.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Lip Filler
+    benefit: Dermal Filler
     image: "/images/gallery/6.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Micro Blading
+    benefit: Eyebrow Enhancement
     image: "/images/gallery/7.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Micro Blading
+    benefit: Eyebrow Enhancement
     image: "/images/gallery/8.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Facial Results
+    benefit: Customized Facial
     image: "/images/gallery/9.png"
-  - procedure: MAx De Lucia
-    benefit: Interior Designer
+  - procedure: Lash Extensions
+    benefit: Beauty Treatment
     image: "/images/gallery/10.png"
 ---

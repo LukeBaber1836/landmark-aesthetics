@@ -134,15 +134,17 @@
 /* content style */
 .content {
   @apply prose max-w-none;
-  @apply prose-headings:mb-[.6em] prose-headings:mt-[.8em] prose-headings:text-text-dark prose-headings:font-medium;
-  @apply prose-h1:text-h1-sm md:prose-h1:text-h1 prose-h1:text-secondary;
-  @apply prose-h2:text-h2-sm md:prose-h2:text-h2 prose-h2:text-secondary;
-  @apply prose-h3:text-h3-sm md:prose-h3:text-h3 prose-h3:text-secondary;
-  @apply prose-h4:text-h4-sm md:prose-h4:text-h4 prose-h4:text-secondary;
+  @apply prose-headings:mb-[.6em] prose-headings:mt-[.8em] prose-headings:font-medium;
+  @apply prose-h1:text-h1-sm md:prose-h1:text-h1 prose-h1:text-primary;
+  @apply prose-h2:text-h2-sm md:prose-h2:text-h2 prose-h2:text-primary;
+  @apply prose-h3:text-h3-sm md:prose-h3:text-h3 prose-h3:text-primary;
+  @apply prose-h4:text-h4-sm md:prose-h4:text-h4 prose-h4:text-primary;
+  @apply prose-h5:text-h5-sm md:prose-h5:text-h5 prose-h5:text-primary;
+  @apply prose-h6:text-h6-sm md:prose-h6:text-h6 prose-h6:text-primary;
   @apply prose-p:text-lg prose-p:text-text;
   @apply prose-a:text-text prose-a:[&.btn]:no-underline;
   @apply prose-img:max-w-full prose-img:rounded;
-  @apply prose-strong:text-text-dark prose-strong:font-normal prose-strong:text-2xl;
+  @apply prose-strong:text-text prose-strong:font-normal prose-strong:text-xl;
   @apply prose-hr:border-border;
   @apply prose-pre:rounded-lg prose-pre:bg-light;
   @apply prose-code:text-primary;

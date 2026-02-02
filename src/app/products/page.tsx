@@ -47,7 +47,7 @@ const ProductsPage = () => {
                   data-aos-delay="150"
                   className="h4 pb-24"
                   dangerouslySetInnerHTML={markdownify(
-                    product.frontmatter.title
+                    product.frontmatter.title,
                   )}
                 />
 
@@ -68,7 +68,7 @@ const ProductsPage = () => {
                     <p
                       className="text-balance"
                       dangerouslySetInnerHTML={markdownify(
-                        feature.description || ""
+                        feature.description || "",
                       )}
                     />
                   </div>
