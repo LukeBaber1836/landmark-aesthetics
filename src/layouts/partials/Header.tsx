@@ -257,7 +257,7 @@ export default function Header() {
                 </li>
               ) : (
                 menu.name && (
-                  <li className="nav-item">
+                  <li className="nav-item hidden lg:block">
                     <Link
                       href={menu.url || "#"}
                       className={`nav-link block ${
