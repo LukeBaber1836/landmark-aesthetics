@@ -15,7 +15,7 @@
     "pagination": 6
   },
   "params": {
-    "contact_form_action": "https://squareup.com/appointments/buyer/widget/51hzr9omifv4pi/FWK61X6ZFH361",
+    "contact_form_action": "/api/contact",
     "address": "402 E Rusk Street, Jacksonville TX 75766",
     "phone": "903-589-8989",
     "email": "questions@landmarkaesthetics.net",

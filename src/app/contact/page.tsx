@@ -1,12 +1,11 @@
-import Button from "@/components/Button";
 import config from "@/config/config.json";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
-import CallToAction from "@/partials/CallToAction";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import type { ContactPage } from "@/types";
 import Link from "next/link";
+import ContactForm from "./ContactForm";
 
 const ContactPage = () => {
   const contact = getListPage<ContactPage["frontmatter"]>("contact/_index.md");
@@ -27,83 +26,11 @@ const ContactPage = () => {
         <div className="container">
           <div className="flex flex-col lg:flex-row gap-20 justify-center lg:justify-between">
             <div className="lg:w-[52%]">
-              <form
-                data-aos="fade-right-sm"
-                data-aos-delay="150"
-                className="bg-primary px-12 py-14 rounded-t-3xl"
+              <ContactForm
+                title={title}
+                description={description}
                 action={contact_form_action}
-                method="POST"
-              >
-                <h2
-                  className="text-white mb-4"
-                  dangerouslySetInnerHTML={markdownify(title)}
-                />
-                {description && (
-                  <p
-                    className="text-text-light/80 mb-16"
-                    dangerouslySetInnerHTML={markdownify(description)}
-                  />
-                )}
-
-                <div className="mb-6">
-                  <label htmlFor="name" className="form-label">
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    className="form-input"
-                    placeholder="John Doe"
-                    type="text"
-                    required
-                  />
-                </div>
-                <div className="mb-6">
-                  <label htmlFor="email" className="form-label">
-                    Email Address <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    className="form-input"
-                    placeholder="john.doe@email.com"
-                    type="email"
-                    required
-                  />
-                </div>
-                <div className="mb-6">
-                  <label htmlFor="name" className="form-label">
-                    Inquire Subject <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    className="form-input"
-                    placeholder="Question about a treatment..."
-                    type="text"
-                    required
-                  />
-                </div>
-                <div className="mb-6">
-                  <label htmlFor="message" className="form-label">
-                    Message <span className="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="form-input"
-                    placeholder="Write your message..."
-                    rows={3}
-                    required
-                  ></textarea>
-                </div>
-                <Button
-                  enable
-                  label="Send a message"
-                  type="submit"
-                  style="btn-outline"
-                />
-              </form>
+              />
             </div>
 
             <div className="lg:w-[55%] self-center lg:self-end pb-14">
