@@ -89,7 +89,7 @@ const Button: React.FC<Props> = ({
           <Link
             href={link}
             target={link.startsWith("http") ? "_blank" : "_self"}
-            className={`btn ${className} relative overflow-hidden inline group hover:shadow-lg hover:shadow-black/50 transition-shadow duration-300 ease-in-out`}
+            className={`btn ${className} relative overflow-hidden inline-block group hover:shadow-lg hover:shadow-black/50 transition-shadow duration-300 ease-in-out`}
           >
             <span className="absolute left-1/2 top-0 h-full w-0 -translate-x-1/2 transition-all duration-300 ease-[cubic-bezier(1,0,1,1)] group-hover:w-[200%]">
               <span
