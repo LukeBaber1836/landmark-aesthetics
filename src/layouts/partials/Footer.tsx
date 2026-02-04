@@ -111,7 +111,7 @@ export default function Footer() {
                   <li className="mb-4 text-text-light text-base hover:text-secondary text-lg!">
                     <Link href={`mailto:${email}`}>{email}</Link>
                   </li>
-                  <li className="mb-4 text-text-light text-base hover:text-secondary text-lg!">
+                  <li className="mb-4 text-text-light text-right text-base hover:text-secondary text-lg!">
                     <Link
                       target="_blank"
                       href={`https://www.google.com/maps?q=${encodeURIComponent(

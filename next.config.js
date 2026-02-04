@@ -8,6 +8,15 @@ const nextConfig = {
   trailingSlash: config.site.trailing_slash,
   output: "standalone",
   transpilePackages: ["next-mdx-remote"],
+  async redirects() {
+    return [
+      {
+        source: "/contact-us/about-us",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
