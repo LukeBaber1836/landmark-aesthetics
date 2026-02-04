@@ -3,6 +3,7 @@
 import React, {
   KeyboardEvent,
   ReactElement,
+  ReactNode,
   RefObject,
   useEffect,
   useRef,
@@ -12,7 +13,7 @@ import React, {
 // Define an interface for the Tab props
 interface TabProps {
   name: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 function Tabs({ children }: { children: ReactElement<TabProps>[] }) {

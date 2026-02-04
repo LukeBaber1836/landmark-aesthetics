@@ -21,6 +21,8 @@ export interface FunFactMetric extends Metric {
   counter: Counter;
 }
 
+export interface ServicesFactMetric extends Metric {}
+
 export interface ServicePost extends Page {
   frontmatter: Page["frontmatter"] & {
     categories: string[];

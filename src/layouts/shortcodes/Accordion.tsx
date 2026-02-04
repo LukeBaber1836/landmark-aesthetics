@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import type { ReactNode } from "react";
 
 const Accordion = ({
   title,
@@ -9,7 +10,7 @@ const Accordion = ({
   id,
 }: {
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   id?: number;
 }) => {
@@ -70,7 +71,7 @@ const Accordion = ({
             )}
             <h5>{title}</h5>
           </div>
-          <div className="w-6 flex-shrink-0 max-md:scale-50">
+          <div className="w-6 shrink-0 max-md:scale-50">
             <svg
               className={`transform transition-transform duration-500 ${show ? "rotate-0" : "rotate-180"}`}
               xmlns="http://www.w3.org/2000/svg"

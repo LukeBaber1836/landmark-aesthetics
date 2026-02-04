@@ -6,12 +6,12 @@ import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import type { CareerPage } from "@/types";
+import type { CareerPage as CareerPageType } from "@/types";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export default async function CareerPage() {
-  const career = getListPage<CareerPage["frontmatter"]>("career/_index.md");
+  const career = getListPage<CareerPageType["frontmatter"]>("career/_index.md");
 
   if (!career) {
     return notFound();
@@ -37,7 +37,7 @@ export default async function CareerPage() {
                   height={800}
                   width={500}
                   alt={title}
-                  className="w-full object-cover aspect-[16/9]"
+                  className="w-full object-cover aspect-video"
                 />
               )}
 

@@ -1,6 +1,8 @@
 "use client";
 
-function Tab({ children }: { children: React.ReactNode }) {
+import type { ReactNode } from "react";
+
+function Tab({ children }: { children: ReactNode }) {
   return <div className="tab-content-panel">{children}</div>;
 }
 

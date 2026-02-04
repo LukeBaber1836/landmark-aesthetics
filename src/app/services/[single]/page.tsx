@@ -3,11 +3,9 @@ import Button from "@/components/Button";
 import ImageFallback from "@/helpers/ImageFallback";
 import MDXContent from "@/helpers/MDXContent";
 import { getSinglePage } from "@/lib/contentParser";
-import similarItems from "@/lib/utils/similarItems";
 import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import type { ServicePost } from "@/types";
-import { format } from "date-fns";
 import { notFound } from "next/navigation";
 
 const services_folder = "services";
@@ -46,7 +44,7 @@ const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
           <div
             data-aos="zoom-in-sm"
             data-aos-delay="200"
-            className="col-10 xl:col-7 pt-[16.25rem] pb-[10rem] text-white"
+            className="col-10 xl:col-7 pt-65 pb-40 text-white"
           >
             <h1
               className="text-center pt-3.5 text-white"

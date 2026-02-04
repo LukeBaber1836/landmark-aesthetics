@@ -1,4 +1,3 @@
-import ArrowBtn from "@/components/ArrowBtn";
 import Button from "@/components/Button";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";

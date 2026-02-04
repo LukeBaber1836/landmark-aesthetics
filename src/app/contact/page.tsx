@@ -3,12 +3,13 @@ import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import type { ContactPage } from "@/types";
+import type { ContactPage as ContactPageType } from "@/types";
 import Link from "next/link";
 import ContactForm from "./ContactForm";
 
 const ContactPage = () => {
-  const contact = getListPage<ContactPage["frontmatter"]>("contact/_index.md");
+  const contact =
+    getListPage<ContactPageType["frontmatter"]>("contact/_index.md");
   const { title, description, meta_title, image, address_section } =
     contact.frontmatter;
   const { contact_form_action } = config.params;

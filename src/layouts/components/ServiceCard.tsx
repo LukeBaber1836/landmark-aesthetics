@@ -1,5 +1,4 @@
 import ImageFallback from "@/helpers/ImageFallback";
-import dateFormat from "@/lib/utils/dateFormat";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { ServicePost } from "@/types";
 import Link from "next/link";
@@ -11,7 +10,7 @@ interface Props {
 }
 
 export default function ServiceCard({ service, index, className }: Props) {
-  const { title, image, date, description } = service.frontmatter;
+  const { title, image, description } = service.frontmatter;
   return (
     <div
       data-aos="fade-up-sm"
@@ -24,7 +23,7 @@ export default function ServiceCard({ service, index, className }: Props) {
           alt={title}
           width={450}
           height={600}
-          className="object-cover aspect-[9/12] w-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
+          className="object-cover aspect-9/12 w-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
         />
       </div>
 

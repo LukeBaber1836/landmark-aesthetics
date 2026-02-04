@@ -1,14 +1,22 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { Resend } from "resend";
+import { SendMailClient } from "zeptomail";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const zeptoUrl = "https://api.zeptomail.com/v1.1/email";
+const zeptoToken = process.env.ZEPTOMAIL_API_KEY || "";
 
 const getFormValue = (formData: FormData, key: string) =>
   String(formData.get(key) || "").trim();
 
 export async function POST(request: NextRequest) {
   try {
+    if (!zeptoToken) {
+      return NextResponse.json(
+        { ok: false, message: "Email service is not configured." },
+        { status: 500 },
+      );
+    }
+
     const formData = await request.formData();
 
     const name = getFormValue(formData, "name");
@@ -23,12 +31,29 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: "questions@landmarkaesthetics.net",
-      replyTo: email,
+    const client = new SendMailClient({ url: zeptoUrl, token: zeptoToken });
+
+    await client.sendMail({
+      from: {
+        address: "noreply@landmarkaesthetics.net",
+        name: "noreply",
+      },
+      to: [
+        {
+          email_address: {
+            address: "questions@landmarkaesthetics.net",
+            name: "LMA",
+          },
+        },
+      ],
+      reply_to: [
+        {
+          address: email,
+          name: name || email,
+        },
+      ],
       subject: subject || "New Contact Form Submission",
-      html: `
+      htmlbody: `
         <h2>New Contact Form Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>

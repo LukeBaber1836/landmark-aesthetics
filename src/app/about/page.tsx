@@ -7,14 +7,11 @@ import CallToAction from "@/partials/CallToAction";
 import FAQs from "@/partials/FAQs";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
-import Testimonial from "@/partials/Testimonial";
-import type { AboutPage, ServicePost, Faqs, ReviewPage } from "@/types";
+import type { AboutPage as AboutPageType, ServicePost, Faqs } from "@/types";
 
 export default function AboutPage() {
-  const about = getListPage<AboutPage["frontmatter"]>("about/_index.md");
+  const about = getListPage<AboutPageType["frontmatter"]>("about/_index.md");
   const services = getSinglePage<ServicePost["frontmatter"]>("services");
-  const testimonial =
-    getListPage<ReviewPage["frontmatter"]>("reviews/_index.md");
   const faqsData = getListPage<Faqs["frontmatter"]>("faqs/_index.md");
 
   const {
@@ -218,7 +215,7 @@ export default function AboutPage() {
                       key={i}
                       data-aos="fade-up-sm"
                       data-aos-delay={i * 100 + 150}
-                      className="mt-[5rem] last:mb-0 group relative max-md:w-[80%] mx-auto"
+                      className="mt-20 last:mb-0 group relative max-md:w-[80%] mx-auto"
                     >
                       <div className="overflow-hidden">
                         <ImageFallback

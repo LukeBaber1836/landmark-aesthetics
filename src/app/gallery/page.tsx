@@ -1,11 +1,11 @@
 import GalleryCard from "@/components/GalleryCard";
 import { getListPage } from "@/lib/contentParser";
 import SeoMeta from "@/partials/SeoMeta";
-import type { GalleryPage } from "@/types";
+import type { GalleryPage as GalleryPageType } from "@/types";
 
 export default function GalleryPage() {
   const galleryIndex =
-    getListPage<GalleryPage["frontmatter"]>("gallery/_index.md");
+    getListPage<GalleryPageType["frontmatter"]>("gallery/_index.md");
 
   return (
     <>

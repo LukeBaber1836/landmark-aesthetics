@@ -6,12 +6,9 @@ import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
 import "@/styles/main.css";
 import { GoogleTagManager } from "@next/third-parties/google";
+import type { ReactNode } from "react";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   const pf = theme.fonts.font_family.primary;
   const fontHref = `https://fonts.googleapis.com/css2?family=${pf}&display=swap`;
 

@@ -3,6 +3,7 @@
 import Button from "@/components/Button";
 import { markdownify } from "@/lib/utils/textConverter";
 import { useState, useRef } from "react";
+import type { FormEvent } from "react";
 
 interface ContactFormProps {
   title: string;
@@ -20,7 +21,7 @@ export default function ContactForm({
   const [error, setError] = useState<string | null>(null);
   const formRef = useRef<HTMLFormElement>(null);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError(null);

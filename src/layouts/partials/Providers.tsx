@@ -4,8 +4,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import type { ReactNode } from "react";
 
-export default function Providers({ children }: { children: React.ReactNode }) {
+export default function Providers({ children }: { children: ReactNode }) {
   const pathname = usePathname();
 
   // Scroll to top on route change
