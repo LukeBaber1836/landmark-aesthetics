@@ -6,7 +6,7 @@ date: 2025-05-04T05:00:00Z
 image: "/images/services/service-6.png"
 image_wide: "/images/services/service-6-wide.png"
 booking_link: "https://book.squareup.com/appointments/51hzr9omifv4pi/location/FWK61X6ZFH361/services/PE6IWOSJABYPBR5MRQXEUB2H"
-pricing: "Starting at $500 per syringe"
+pricing: "Starting at $550 per syringe"
 categories: ["Home"]
 featured: false
 draft: false

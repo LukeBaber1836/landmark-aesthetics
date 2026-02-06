@@ -6,7 +6,7 @@ date: 2025-05-04T05:00:00Z
 image: "/images/services/service-8.png"
 image_wide: "/images/services/service-8-wide.png"
 booking_link: "https://book.squareup.com/appointments/51hzr9omifv4pi/location/FWK61X6ZFH361/services/ZH54L2M6L3FHDBB27LFBOPMA"
-pricing: "Starting at $25"
+pricing: "Starting at $30"
 categories: ["Home"]
 featured: false
 draft: false
