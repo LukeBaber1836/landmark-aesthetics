@@ -26,7 +26,6 @@ gallery:
     - "/images/gallery/7.png"
     - "/images/gallery/8.png"
     - "/images/gallery/9.png"
-    - "/images/gallery/10.png"
 
 # Fun Facts
 fun_facts:
@@ -69,7 +68,7 @@ fun_facts:
 # Services Section
 services:
   enable: true
-  title: "We offer a wide range of regenerative beauty treatmens"
+  title: "We offer a wide range of regenerative beauty treatments"
   subtitle: "SERVICES"
   button:
     enable: true

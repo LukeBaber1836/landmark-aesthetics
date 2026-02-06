@@ -32,7 +32,4 @@ gallery_images:
   - procedure: Facial Results
     benefit: Customized Facial
     image: "/images/gallery/9.png"
-  - procedure: Lash Extensions
-    benefit: Beauty Treatment
-    image: "/images/gallery/10.png"
 ---
