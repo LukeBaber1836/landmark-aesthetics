@@ -91,7 +91,7 @@ export default function Footer() {
                   width={215}
                   height={52}
                   alt="footer logo"
-                  className="mb-3 max-md:mx-auto sm:translate-x-0 translate-x-4"
+                  className="mb-3 max-md:mx-auto sm:translate-x-0 translate-x-4 h-auto"
                   loading="lazy"
                 />
                 <p

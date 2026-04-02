@@ -236,14 +236,11 @@ export default function AboutPage() {
                           className="h5 font-medium"
                           dangerouslySetInnerHTML={markdownify(t.name)}
                         />
-                        <p
-                          dangerouslySetInnerHTML={markdownify(t.designation!)}
-                        />
                       </div>
 
                       {t.description && (
                         <p
-                          className="mt-4 text-sm leading-relaxed text-primary/80"
+                          className="mt-4 text-sm leading-relaxed text-left text-primary/80"
                           dangerouslySetInnerHTML={markdownify(t.description)}
                         />
                       )}

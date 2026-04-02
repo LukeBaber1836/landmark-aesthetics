@@ -23,7 +23,7 @@ export default function ServiceCard({ service, index, className }: Props) {
           alt={title}
           width={450}
           height={600}
-          className="object-cover aspect-9/12 w-full group-hover:scale-105 transition-transform duration-300 ease-in-out"
+          className="object-cover aspect-9/12 w-full h-auto group-hover:scale-105 transition-transform duration-300 ease-in-out"
         />
       </div>
 
