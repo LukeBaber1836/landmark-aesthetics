@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
         <link rel="shortcut icon" href={config.site.favicon} />
-        <meta name="theme-name" content="NextSpace" />
+        <meta name="theme-name" content="Landmark Aesthetics" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="theme-color"

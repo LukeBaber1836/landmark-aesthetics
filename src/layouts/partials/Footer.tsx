@@ -30,15 +30,15 @@ export default function Footer() {
           </div>
           <div className="md:col-6 lg:col-7 ml-auto max-md:mt-14">
             <div className="mb-10 lg:mb-8">
-              <div className="row max-lg:gy-4 justify-center max-md:text-center lg:justify-end space-x-10">
+              <div className="flex flex-row flex-wrap justify-center-safe max-md:text-center lg:justify-end">
                 {menu.footer.map((menu, i) => (
                   <div
                     data-aos="fade-up-sm"
                     data-aos-delay={i * 100 + 200}
-                    className="flex flex-col items-center col-4 md:col-6 lg:col-3 pr-0 w-fit"
+                    className="flex flex-col items-center col-4 md:col-6 lg:col-3 w-fit mx-4 py-5"
                     key={i}
                   >
-                    <h5 className="mb-7 font-normal text-base lg:mb-6 text-text-light/50">
+                    <h5 className="mb-4 font-normal text-base lg:mb-6 text-text-light/50">
                       {menu.title}
                     </h5>
                     <ul className="flex flex-col flex-nowrap items-center w-fit text-center">
@@ -56,9 +56,9 @@ export default function Footer() {
                 <div
                   data-aos="fade-up-sm"
                   data-aos-delay={menu.footer.length * 100 + 200}
-                  className="flex flex-col items-center col-4 md:col-6 lg:col-3 pr-0 w-fit"
+                  className="flex flex-col items-center col-4 md:col-6 lg:col-3 mx-4 py-5 w-fit"
                 >
-                  <h5 className="mb-7 font-normal text-base lg:mb-6 text-text-light/50">
+                  <h5 className="mb-4 font-normal text-base lg:mb-6 text-text-light/50">
                     Socials
                   </h5>
                   <ul className="flex flex-col items-center">

@@ -29,27 +29,26 @@ team_section:
   title: "Meet The Team"
   subtitle: "Our Experts"
   members:
-    - name: Dr. Daniel Baber MD.
+    - name: Dr. Daniel Baber MD
       designation: Founder
-      avatar: "/images/team/a.png"
-    - name: Rachel Baber NP.
+      description: "Dr. Daniel Baber, MD, is a board-certified physician in Family Medicine with over 30 years of experience, including extensive work in Emergency Medicine and Medical Aesthetics. As Medical Director, he brings a comprehensive, patient-centered approach to care, combining decades of clinical expertise with a passion for innovation. His specialties include advanced aesthetic treatments and wellness optimization, with a particular interest in laser skin resurfacing, photobiomodulation, and hormone replacement therapy. Dr. Baber is dedicated to helping patients achieve optimal health and natural, confident results. Ask him about his corgi, Sophia!"
+      avatar: "/images/team/daniel.png"
+
+    - name: Rachel Baber FNP
       designation: Esthetician
-      avatar: "/images/team/c.png"
-    - name: Grace Hall RN.
-      designation: Manager / Esthetician
-      avatar: "/images/team/b.png"
-    - name: Saber Smith RN.
+      description: "Rachel Baber, FNP, is a board-certified Nurse Practitioner with extensive experience in critical care, pediatrics, and family medicine. She brings a well-rounded, patient-focused approach to care, combining medical expertise with a passion for aesthetics and wellness. Rachel loves helping patients with acne, weightloss, and helping patients feel their best with peptides. She is dedicated to enhancing both confidence and overall health, guiding each patient to look and feel their absolute best."
+      avatar: "/images/team/rachel.png"
+
+    - name: Saber Smith RN, BSN
       designation: Esthetician
-      avatar: "/images/team/d.png"
-    - name: Deb Davidson
-      designation: Message Therapist
-      avatar: "/images/team/d.png"
-    - name: Julianne Lindsey RN.
+      description: "Saber Smith, RN, BSN, is an experienced nurse injector with over 6 years in medical aesthetics, along with a background in critical care and surgery. She has worked in aesthetic clinics in Dallas and Shreveport, gaining extensive experience in advanced aesthetic treatments. Saber combines strong clinical expertise with an eye for natural-looking results and is passionate about helping patients look and feel their best."
+      avatar: "/images/team/saber.png"
+
+    - name: Julianne Lindsey RN
       designation: Esthetician
-      avatar: "/images/team/d.png"
-    - name: Brenda McCuin
-      designation: Physician Assistant
-      avatar: "/images/team/d.png"
+      description: "Julianne Lindsey, RN, is an experienced nurse injector with 7  plus years in medical aesthetics and a background in critical care nursing. She is passionate about delivering safe, natural-looking results while helping patients feel confident and cared for through personalized treatments."
+      avatar: "/images/team/julianne.png"
+
 draft: false
 ---
 

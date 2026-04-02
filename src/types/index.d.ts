@@ -52,6 +52,7 @@ export interface Page {
 export interface TeamMember {
   name: string;
   designation: string;
+  description?: string;
   avatar?: string;
 }
 
