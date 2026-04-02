@@ -37,7 +37,7 @@ team_section:
       description: "Rachel Baber, FNP, is a board-certified Nurse Practitioner with extensive experience in critical care, pediatrics, and family medicine. She brings a well-rounded, patient-focused approach to care, combining medical expertise with a passion for aesthetics and wellness. Rachel loves helping patients with acne, weightloss, and helping patients feel their best with peptides. She is dedicated to enhancing both confidence and overall health, guiding each patient to look and feel their absolute best."
       avatar: "/images/team/rachel.png"
 
-    - name: Saber Smith, RN BSN
+    - name: Saber Smith, RN, BSN
       description: "Saber Smith, RN, BSN, is an experienced nurse injector with over 6 years in medical aesthetics, along with a background in critical care and surgery. She has worked in aesthetic clinics in Dallas and Shreveport, gaining extensive experience in advanced aesthetic treatments. Saber combines strong clinical expertise with an eye for natural-looking results and is passionate about helping patients look and feel their best."
       avatar: "/images/team/saber.png"
 
