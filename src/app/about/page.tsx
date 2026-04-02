@@ -44,7 +44,10 @@ export default function AboutPage() {
 
           <div className="flex flex-row gap-4 md:gap-6 items-center mt-14 overflow-hidden">
             <div className="w-[24%] lg:ml-5 ml-3.5">
-              <div data-aos="zoom-in-sm" data-aos-delay="150" className="rounded-2xl overflow-hidden shadow-lg shadow-black/40">
+              <div
+                data-aos="zoom-in-sm"
+                data-aos-delay="150"
+                className="rounded-xl overflow-hidden shadow-lg shadow-black/40">
                 <ImageFallback
                   src={images_gallery[0]}
                   alt="Landmark Aesthetics"
@@ -110,6 +113,19 @@ export default function AboutPage() {
                     width={390}
                     height={258}
                     className="object-cover object-top w-full"
+                  />
+                </div>
+                <div
+                  data-aos="zoom-in-sm"
+                  data-aos-delay="350"
+                  className="w-1/2"
+                >
+                  <ImageFallback
+                    src={images_gallery[5]}
+                    alt="NextSpace"
+                    width={290}
+                    height={208}
+                    className="object-contain object-top max-sm:w-full rounded-xl shadow-lg shadow-black/40"
                   />
                 </div>
               </div>
@@ -204,7 +220,7 @@ export default function AboutPage() {
                       data-aos-delay={i * 100 + 150}
                       className="mt-20 last:mb-0 group relative max-md:w-[80%] mx-auto break-inside-avoid"
                     >
-                      <div className="rounded-xl overflow-hidden shadow-lg shadow-black/20">
+                      <div className="rounded-2xl overflow-hidden shadow-lg shadow-black/20">
                         <ImageFallback
                           src={t.avatar!}
                           width={500}
