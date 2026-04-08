@@ -13,7 +13,7 @@ banner:
 # Gallery
 gallery:
   enable: true
-  title: What is Landmark Aesthetics.
+  title: What is Landmark Aesthetics?
   subtitle: ABOUT US
   description: Landmark Aesthetics is a modern medspa dedicated to helping clients look and feel their best. We offer trusted treatments that are delivered with clinical precision and a focus on natural, confident results.
   images:
