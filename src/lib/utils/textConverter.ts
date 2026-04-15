@@ -1,6 +1,25 @@
 import { slug } from "github-slugger";
 import { marked } from "marked";
 
+const isPromiseLike = (value: unknown): value is Promise<string> => {
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    "then" in value &&
+    typeof (value as { then: unknown }).then === "function"
+  );
+};
+
+const ensureMarkedString = (value: string | Promise<string>): string => {
+  if (isPromiseLike(value)) {
+    throw new Error(
+      "Marked returned async HTML. Configure marked for sync parsing or await parsing before rendering.",
+    );
+  }
+
+  return value;
+};
+
 // slugify
 export const slugify = (content: string) => {
   return slug(content);
@@ -8,7 +27,11 @@ export const slugify = (content: string) => {
 
 // markdownify
 export const markdownify = (content: string, div?: boolean) => {
-  return { __html: div ? marked.parse(content) : marked.parseInline(content) };
+  const html = div
+    ? ensureMarkedString(marked.parse(content, { async: false }))
+    : ensureMarkedString(marked.parseInline(content, { async: false }));
+
+  return { __html: html };
 };
 
 // humanize
@@ -33,7 +56,7 @@ export const titleify = (content: string) => {
 
 // plainify
 export const plainify = (content: string) => {
-  const parseMarkdown: any = marked.parse(content);
+  const parseMarkdown = ensureMarkedString(marked.parse(content, { async: false }));
   const filterBrackets = parseMarkdown.replace(/<\/?[^>]+(>|$)/gm, "");
   const filterSpaces = filterBrackets.replace(/[\r\n]\s*[\r\n]/gm, "");
   const stripHTML = htmlEntityDecoder(filterSpaces);
