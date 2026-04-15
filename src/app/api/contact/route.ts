@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { SendMailClient } from "zeptomail";
+import { getPostHogClient } from "@/lib/posthog-server";
 
 const zeptoUrl = "https://api.zeptomail.com/v1.1/email";
 const zeptoToken = process.env.ZEPTOMAIL_API_KEY || "";
@@ -63,11 +64,24 @@ export async function POST(request: NextRequest) {
       `,
     });
 
+    const posthog = getPostHogClient();
+    posthog.capture({
+      distinctId: email,
+      event: "contact_email_sent",
+      properties: { subject: subject || "New Contact Form Submission", name },
+    });
+
     return NextResponse.json({ ok: true, message: "Message sent." });
   } catch (error) {
     console.error("Error sending email:", error);
     const message =
       error instanceof Error ? error.message : "Unexpected server error.";
+    const posthog = getPostHogClient();
+    posthog.capture({
+      distinctId: "server",
+      event: "contact_email_failed",
+      properties: { error_message: message },
+    });
     return NextResponse.json({ ok: false, message }, { status: 500 });
   }
 }

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import type { ReactNode } from "react";
+import posthog from "posthog-js";
 
 const Accordion = ({
   title,
@@ -60,7 +61,13 @@ const Accordion = ({
       <button
         aria-expanded={show}
         className={`accordion-header ${show ? "pb-2" : ""}`}
-        onClick={() => setShow(!show)}
+        onClick={() => {
+          const opening = !show;
+          setShow(opening);
+          if (opening) {
+            posthog.capture("faq_question_expanded", { question: title });
+          }
+        }}
       >
         <div className="flex items-start justify-between w-full">
           <div className="flex items-start gap-8 xl:gap-20">

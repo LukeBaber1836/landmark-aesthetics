@@ -3,10 +3,12 @@ import Button from "@/components/Button";
 import ImageFallback from "@/helpers/ImageFallback";
 import MDXContent from "@/helpers/MDXContent";
 import { getSinglePage } from "@/lib/contentParser";
+import { getPostHogClient } from "@/lib/posthog-server";
 import { markdownify } from "@/lib/utils/textConverter";
 import SeoMeta from "@/partials/SeoMeta";
 import type { ServicePost } from "@/types";
 import { notFound } from "next/navigation";
+import BookingButton from "./BookingButton";
 
 const services_folder = "services";
 
@@ -30,6 +32,16 @@ const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
   const service = services.find((s) => s.slug === params.single);
 
   if (!service) return notFound();
+
+  const posthog = getPostHogClient();
+  posthog.capture({
+    distinctId: "server",
+    event: "service_viewed",
+    properties: {
+      service_slug: service.slug,
+      service_title: service.frontmatter.title,
+    },
+  });
 
   // Get 2 random services excluding the current one
   const otherServices = services.filter((s) => s.slug !== service.slug);
@@ -80,10 +92,10 @@ const ServicePage = async (props: { params: Promise<{ single: string }> }) => {
                 </div>
               )}
               <div className="flex justify-center mt-16 mb-10">
-                <Button
-                  enable={true}
-                  label="Book your appointment today!"
+                <BookingButton
                   link={service.frontmatter.booking_link || "#"}
+                  serviceSlug={service.slug!}
+                  serviceTitle={service.frontmatter.title}
                 />
               </div>
             </article>

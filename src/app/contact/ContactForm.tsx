@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import { markdownify } from "@/lib/utils/textConverter";
 import { useState, useRef } from "react";
 import type { FormEvent } from "react";
+import posthog from "posthog-js";
 
 interface ContactFormProps {
   title: string;
@@ -37,16 +38,29 @@ export default function ContactForm({
       console.log("Response:", result);
 
       if (response.ok) {
+        posthog.capture("contact_form_submitted", {
+          subject: String(
+            formRef.current?.querySelector<HTMLInputElement>("#subject")
+              ?.value ?? "",
+          ),
+        });
         setIsSuccess(true);
         formRef.current?.reset();
         setTimeout(() => setIsSuccess(false), 5000);
       } else {
+        posthog.capture("contact_form_submission_failed", {
+          error_message: result.message || "Form submission failed",
+        });
         setError(result.message || "Form submission failed");
         console.error("Form submission failed:", result);
       }
     } catch (error) {
       const errorMessage =
         error instanceof Error ? error.message : "Network error";
+      posthog.captureException(error);
+      posthog.capture("contact_form_submission_failed", {
+        error_message: errorMessage,
+      });
       setError(errorMessage);
       console.error("Error submitting form:", error);
     } finally {

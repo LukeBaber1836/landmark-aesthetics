@@ -1,7 +1,7 @@
-import Button from "@/components/Button";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { CTASection } from "@/types";
+import CTAButtons from "./CTAButtons";
 
 const CallToAction = ({
   isNoSectionTop = false,
@@ -42,17 +42,10 @@ const CallToAction = ({
                       callToActionData.frontmatter.description,
                     )}
                   />
-                  <div className="flex flex-wrap gap-5 pt-8 max-lg:justify-center">
-                    <div data-aos="zoom-in-sm" data-aos-delay="250">
-                      <Button {...callToActionData.frontmatter.button_solid} />
-                    </div>
-                    <div data-aos="zoom-in-sm" data-aos-delay="350">
-                      <Button
-                        {...callToActionData.frontmatter.button_outline}
-                        style="btn-primary text-primary bg-body"
-                      />
-                    </div>
-                  </div>
+                  <CTAButtons
+                    buttonSolid={callToActionData.frontmatter.button_solid}
+                    buttonOutline={callToActionData.frontmatter.button_outline}
+                  />
                 </div>
               </div>
             </div>
